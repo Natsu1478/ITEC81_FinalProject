@@ -43,16 +43,33 @@ Partial Class FillupForm
         TextBox8 = New TextBox()
         DateTimePicker1 = New DateTimePicker()
         btnBack = New Button()
+        Label11 = New Label()
+        Label12 = New Label()
+        Label13 = New Label()
+        Label14 = New Label()
+        Label15 = New Label()
+        txtAdmin_ID = New TextBox()
+        txtFirstName = New TextBox()
+        txtMiddleName = New TextBox()
+        txtLastName = New TextBox()
+        txtDepartment = New TextBox()
+        txtEmailAddress = New TextBox()
+        txtContactNumber = New TextBox()
+        txtGender = New TextBox()
+        dtpBirthDate = New DateTimePicker()
+        Button1 = New Button()
         btnComplete = New Button()
+        btnFillInfo = New Button()
         SuspendLayout()
         ' 
         ' lblCurrUser
         ' 
         lblCurrUser.AutoSize = True
         lblCurrUser.Font = New Font("Impact", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblCurrUser.Location = New Point(168, 48)
+        lblCurrUser.Location = New Point(159, 29)
+        lblCurrUser.Margin = New Padding(2, 0, 2, 0)
         lblCurrUser.Name = "lblCurrUser"
-        lblCurrUser.Size = New Size(162, 64)
+        lblCurrUser.Size = New Size(136, 54)
         lblCurrUser.TabIndex = 7
         lblCurrUser.Text = "ADMIN"
         lblCurrUser.TextAlign = ContentAlignment.MiddleCenter
@@ -61,47 +78,56 @@ Partial Class FillupForm
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Impact", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(200, 93)
+        Label1.Location = New Point(184, 77)
+        Label1.Margin = New Padding(2, 0, 2, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(234, 56)
+        Label1.Size = New Size(193, 45)
         Label1.TabIndex = 6
         Label1.Text = "Fill Up Form"
         ' 
         ' label2
         ' 
         label2.AutoSize = True
-        label2.Location = New Point(93, 174)
+        label2.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        label2.Location = New Point(81, 144)
+        label2.Margin = New Padding(2, 0, 2, 0)
         label2.Name = "label2"
-        label2.Size = New Size(79, 20)
+        label2.Size = New Size(109, 25)
         label2.TabIndex = 8
-        label2.Text = "AdminImnidah ID: "
+        label2.Text = "Admin ID: "
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(93, 215)
+        Label3.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label3.Location = New Point(67, 184)
+        Label3.Margin = New Padding(2, 0, 2, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(87, 20)
+        Label3.Size = New Size(126, 25)
         Label3.TabIndex = 9
         Label3.Text = "First Name: "
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(93, 260)
+        Label4.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label4.Location = New Point(45, 223)
+        Label4.Margin = New Padding(2, 0, 2, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(107, 20)
+        Label4.Size = New Size(148, 25)
         Label4.TabIndex = 10
         Label4.Text = "Middle Name: "
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(93, 302)
+        Label5.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label5.Location = New Point(58, 302)
+        Label5.Margin = New Padding(2, 0, 2, 0)
         Label5.Name = "Label5"
-        Label5.Size = New Size(86, 20)
+        Label5.Size = New Size(135, 25)
         Label5.TabIndex = 11
-        Label5.Text = "Last Name: "
+        Label5.Text = "Department: "
         ' 
         ' Label6
         ' 
@@ -230,30 +256,189 @@ Partial Class FillupForm
         btnBack.Text = "Back"
         btnBack.UseVisualStyleBackColor = False
         ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label11.Location = New Point(66, 262)
+        Label11.Margin = New Padding(2, 0, 2, 0)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(124, 25)
+        Label11.TabIndex = 12
+        Label11.Text = "Last Name: "
+        ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label12.Location = New Point(35, 345)
+        Label12.Margin = New Padding(2, 0, 2, 0)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(158, 25)
+        Label12.TabIndex = 13
+        Label12.Text = "Email Address: "
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label13.Location = New Point(19, 387)
+        Label13.Margin = New Padding(2, 0, 2, 0)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(176, 25)
+        Label13.TabIndex = 14
+        Label13.Text = "Contact Number: "
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label14.Location = New Point(70, 428)
+        Label14.Margin = New Padding(2, 0, 2, 0)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(120, 25)
+        Label14.TabIndex = 15
+        Label14.Text = "Birth Date: "
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label15.Location = New Point(98, 466)
+        Label15.Margin = New Padding(2, 0, 2, 0)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(92, 25)
+        Label15.TabIndex = 16
+        Label15.Text = "Gender: "
+        ' 
+        ' txtAdmin_ID
+        ' 
+        txtAdmin_ID.Enabled = False
+        txtAdmin_ID.Location = New Point(195, 142)
+        txtAdmin_ID.Name = "txtAdmin_ID"
+        txtAdmin_ID.Size = New Size(288, 27)
+        txtAdmin_ID.TabIndex = 17
+        ' 
+        ' txtFirstName
+        ' 
+        txtFirstName.Location = New Point(195, 182)
+        txtFirstName.Name = "txtFirstName"
+        txtFirstName.Size = New Size(288, 27)
+        txtFirstName.TabIndex = 18
+        ' 
+        ' txtMiddleName
+        ' 
+        txtMiddleName.Location = New Point(195, 221)
+        txtMiddleName.Name = "txtMiddleName"
+        txtMiddleName.Size = New Size(288, 27)
+        txtMiddleName.TabIndex = 19
+        ' 
+        ' txtLastName
+        ' 
+        txtLastName.Location = New Point(195, 260)
+        txtLastName.Name = "txtLastName"
+        txtLastName.Size = New Size(288, 27)
+        txtLastName.TabIndex = 20
+        ' 
+        ' txtDepartment
+        ' 
+        txtDepartment.Location = New Point(195, 300)
+        txtDepartment.Name = "txtDepartment"
+        txtDepartment.Size = New Size(288, 27)
+        txtDepartment.TabIndex = 21
+        ' 
+        ' txtEmailAddress
+        ' 
+        txtEmailAddress.Location = New Point(195, 343)
+        txtEmailAddress.Name = "txtEmailAddress"
+        txtEmailAddress.Size = New Size(288, 27)
+        txtEmailAddress.TabIndex = 22
+        ' 
+        ' txtContactNumber
+        ' 
+        txtContactNumber.Location = New Point(195, 385)
+        txtContactNumber.Name = "txtContactNumber"
+        txtContactNumber.Size = New Size(288, 27)
+        txtContactNumber.TabIndex = 23
+        ' 
+        ' txtGender
+        ' 
+        txtGender.Location = New Point(195, 464)
+        txtGender.Name = "txtGender"
+        txtGender.Size = New Size(288, 27)
+        txtGender.TabIndex = 24
+        ' 
+        ' dtpBirthDate
+        ' 
+        dtpBirthDate.Location = New Point(195, 426)
+        dtpBirthDate.Name = "dtpBirthDate"
+        dtpBirthDate.Size = New Size(288, 27)
+        dtpBirthDate.TabIndex = 25
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.Brown
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Franklin Gothic Medium Cond", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.ForeColor = Color.White
+        Button1.Location = New Point(344, 519)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(139, 43)
+        Button1.TabIndex = 27
+        Button1.Text = "Back"
+        Button1.UseVisualStyleBackColor = False
+        ' 
         ' btnComplete
         ' 
-        btnComplete.BackColor = Color.White
-        btnComplete.FlatStyle = FlatStyle.Flat
-        btnComplete.Font = New Font("Franklin Gothic Medium Cond", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnComplete.Location = New Point(299, 626)
+        btnComplete.Location = New Point(0, 0)
         btnComplete.Name = "btnComplete"
-        btnComplete.Size = New Size(99, 43)
-        btnComplete.TabIndex = 26
-        btnComplete.Text = "Complete"
-        btnComplete.UseVisualStyleBackColor = False
+        btnComplete.Size = New Size(75, 23)
+        btnComplete.TabIndex = 0
+        ' 
+        ' btnFillInfo
+        ' 
+        btnFillInfo.BackColor = Color.White
+        btnFillInfo.FlatStyle = FlatStyle.Flat
+        btnFillInfo.Font = New Font("Franklin Gothic Medium Cond", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnFillInfo.ForeColor = Color.Black
+        btnFillInfo.Location = New Point(195, 519)
+        btnFillInfo.Name = "btnFillInfo"
+        btnFillInfo.Size = New Size(139, 43)
+        btnFillInfo.TabIndex = 28
+        btnFillInfo.Text = "Fill Information"
+        btnFillInfo.UseVisualStyleBackColor = False
         ' 
         ' FillupForm
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.NavajoWhite
-        ClientSize = New Size(555, 692)
+        ClientSize = New Size(516, 586)
+        Controls.Add(btnFillInfo)
+        Controls.Add(Button1)
+        Controls.Add(dtpBirthDate)
+        Controls.Add(txtGender)
+        Controls.Add(txtContactNumber)
+        Controls.Add(txtEmailAddress)
+        Controls.Add(txtDepartment)
+        Controls.Add(txtLastName)
+        Controls.Add(txtMiddleName)
+        Controls.Add(txtFirstName)
+        Controls.Add(txtAdmin_ID)
+        Controls.Add(Label15)
+        Controls.Add(Label14)
+        Controls.Add(Label13)
+        Controls.Add(Label12)
+        Controls.Add(Label11)
         Controls.Add(Label5)
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(label2)
         Controls.Add(lblCurrUser)
         Controls.Add(Label1)
+        Margin = New Padding(2)
+        MaximizeBox = False
+        MinimizeBox = False
         Name = "FillupForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "FillupForm"
@@ -283,4 +468,20 @@ Partial Class FillupForm
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents btnBack As Button
     Friend WithEvents btnComplete As Button
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents txtAdmin_ID As TextBox
+    Friend WithEvents txtFirstName As TextBox
+    Friend WithEvents txtMiddleName As TextBox
+    Friend WithEvents txtLastName As TextBox
+    Friend WithEvents txtDepartment As TextBox
+    Friend WithEvents txtEmailAddress As TextBox
+    Friend WithEvents txtContactNumber As TextBox
+    Friend WithEvents txtGender As TextBox
+    Friend WithEvents dtpBirthDate As DateTimePicker
+    Friend WithEvents Button1 As Button
+    Friend WithEvents btnFillInfo As Button
 End Class
