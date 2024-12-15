@@ -35,5 +35,8 @@
         txtPassword.Text = ""
         rdbFaculty.Checked = False
         rdbStudent.Checked = False
+        Me.Hide()
+        FillupForm.Show()
+
     End Sub
 End Class
