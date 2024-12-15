@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FillupForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FillupForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         lblCurrUser = New Label()
         Label1 = New Label()
@@ -50,9 +50,9 @@ Partial Class FillupForm
         ' 
         lblCurrUser.AutoSize = True
         lblCurrUser.Font = New Font("Impact", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblCurrUser.Location = New Point(171, 27)
+        lblCurrUser.Location = New Point(168, 48)
         lblCurrUser.Name = "lblCurrUser"
-        lblCurrUser.Size = New Size(136, 54)
+        lblCurrUser.Size = New Size(162, 64)
         lblCurrUser.TabIndex = 7
         lblCurrUser.Text = "ADMIN"
         lblCurrUser.TextAlign = ContentAlignment.MiddleCenter
@@ -61,56 +61,52 @@ Partial Class FillupForm
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Impact", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(218, 74)
+        Label1.Location = New Point(200, 93)
         Label1.Name = "Label1"
-        Label1.Size = New Size(193, 45)
+        Label1.Size = New Size(234, 56)
         Label1.TabIndex = 6
         Label1.Text = "Fill Up Form"
         ' 
         ' label2
         ' 
         label2.AutoSize = True
-        label2.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
-        label2.Location = New Point(85, 161)
+        label2.Location = New Point(93, 174)
         label2.Name = "label2"
-        label2.Size = New Size(109, 25)
+        label2.Size = New Size(79, 20)
         label2.TabIndex = 8
-        label2.Text = "Admin ID: "
+        label2.Text = "AdminImnidah ID: "
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
-        Label3.Location = New Point(66, 211)
+        Label3.Location = New Point(93, 215)
         Label3.Name = "Label3"
-        Label3.Size = New Size(126, 25)
+        Label3.Size = New Size(87, 20)
         Label3.TabIndex = 9
         Label3.Text = "First Name: "
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
-        Label4.Location = New Point(46, 264)
+        Label4.Location = New Point(93, 260)
         Label4.Name = "Label4"
-        Label4.Size = New Size(148, 25)
+        Label4.Size = New Size(107, 20)
         Label4.TabIndex = 10
         Label4.Text = "Middle Name: "
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
-        Label5.Location = New Point(68, 313)
+        Label5.Location = New Point(93, 302)
         Label5.Name = "Label5"
-        Label5.Size = New Size(124, 25)
+        Label5.Size = New Size(86, 20)
         Label5.TabIndex = 11
         Label5.Text = "Last Name: "
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
+        Label6.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
         Label6.Location = New Point(57, 361)
         Label6.Name = "Label6"
         Label6.Size = New Size(135, 25)
@@ -120,7 +116,7 @@ Partial Class FillupForm
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
+        Label7.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
         Label7.Location = New Point(36, 410)
         Label7.Name = "Label7"
         Label7.Size = New Size(158, 25)
@@ -130,7 +126,7 @@ Partial Class FillupForm
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
+        Label8.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
         Label8.Location = New Point(18, 457)
         Label8.Name = "Label8"
         Label8.Size = New Size(176, 25)
@@ -140,7 +136,7 @@ Partial Class FillupForm
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
+        Label9.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
         Label9.Location = New Point(72, 506)
         Label9.Name = "Label9"
         Label9.Size = New Size(120, 25)
@@ -150,7 +146,7 @@ Partial Class FillupForm
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
+        Label10.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
         Label10.Location = New Point(100, 555)
         Label10.Name = "Label10"
         Label10.Size = New Size(92, 25)
@@ -225,7 +221,7 @@ Partial Class FillupForm
         ' 
         btnBack.BackColor = Color.Brown
         btnBack.FlatStyle = FlatStyle.Flat
-        btnBack.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnBack.Font = New Font("Franklin Gothic Medium Cond", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnBack.ForeColor = Color.White
         btnBack.Location = New Point(416, 626)
         btnBack.Name = "btnBack"
@@ -238,7 +234,7 @@ Partial Class FillupForm
         ' 
         btnComplete.BackColor = Color.White
         btnComplete.FlatStyle = FlatStyle.Flat
-        btnComplete.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnComplete.Font = New Font("Franklin Gothic Medium Cond", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnComplete.Location = New Point(299, 626)
         btnComplete.Name = "btnComplete"
         btnComplete.Size = New Size(99, 43)
@@ -248,34 +244,16 @@ Partial Class FillupForm
         ' 
         ' FillupForm
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.NavajoWhite
         ClientSize = New Size(555, 692)
-        Controls.Add(btnBack)
-        Controls.Add(btnComplete)
-        Controls.Add(DateTimePicker1)
-        Controls.Add(TextBox8)
-        Controls.Add(TextBox7)
-        Controls.Add(TextBox6)
-        Controls.Add(TextBox5)
-        Controls.Add(TextBox4)
-        Controls.Add(TextBox3)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
-        Controls.Add(Label10)
-        Controls.Add(Label9)
-        Controls.Add(Label8)
-        Controls.Add(Label7)
-        Controls.Add(Label6)
         Controls.Add(Label5)
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(label2)
         Controls.Add(lblCurrUser)
         Controls.Add(Label1)
-        MaximizeBox = False
-        MinimizeBox = False
         Name = "FillupForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "FillupForm"
