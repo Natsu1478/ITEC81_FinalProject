@@ -88,7 +88,7 @@ Partial Class FillupForm
         ' label2
         ' 
         label2.AutoSize = True
-        label2.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        label2.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
         label2.Location = New Point(81, 144)
         label2.Margin = New Padding(2, 0, 2, 0)
         label2.Name = "label2"
@@ -99,7 +99,7 @@ Partial Class FillupForm
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label3.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
         Label3.Location = New Point(67, 184)
         Label3.Margin = New Padding(2, 0, 2, 0)
         Label3.Name = "Label3"
@@ -110,7 +110,7 @@ Partial Class FillupForm
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label4.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
         Label4.Location = New Point(45, 223)
         Label4.Margin = New Padding(2, 0, 2, 0)
         Label4.Name = "Label4"
@@ -121,7 +121,7 @@ Partial Class FillupForm
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label5.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
         Label5.Location = New Point(58, 302)
         Label5.Margin = New Padding(2, 0, 2, 0)
         Label5.Name = "Label5"
@@ -132,7 +132,7 @@ Partial Class FillupForm
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label6.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
         Label6.Location = New Point(57, 361)
         Label6.Name = "Label6"
         Label6.Size = New Size(135, 25)
@@ -142,7 +142,7 @@ Partial Class FillupForm
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label7.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
         Label7.Location = New Point(36, 410)
         Label7.Name = "Label7"
         Label7.Size = New Size(158, 25)
@@ -152,7 +152,7 @@ Partial Class FillupForm
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label8.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
         Label8.Location = New Point(18, 457)
         Label8.Name = "Label8"
         Label8.Size = New Size(176, 25)
@@ -162,7 +162,7 @@ Partial Class FillupForm
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label9.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
         Label9.Location = New Point(72, 506)
         Label9.Name = "Label9"
         Label9.Size = New Size(120, 25)
@@ -172,7 +172,7 @@ Partial Class FillupForm
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label10.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
         Label10.Location = New Point(100, 555)
         Label10.Name = "Label10"
         Label10.Size = New Size(92, 25)
@@ -247,7 +247,7 @@ Partial Class FillupForm
         ' 
         btnBack.BackColor = Color.Brown
         btnBack.FlatStyle = FlatStyle.Flat
-        btnBack.Font = New Font("Franklin Gothic Medium Cond", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnBack.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnBack.ForeColor = Color.White
         btnBack.Location = New Point(416, 626)
         btnBack.Name = "btnBack"
@@ -259,7 +259,7 @@ Partial Class FillupForm
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label11.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
         Label11.Location = New Point(66, 262)
         Label11.Margin = New Padding(2, 0, 2, 0)
         Label11.Name = "Label11"
@@ -270,7 +270,7 @@ Partial Class FillupForm
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label12.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
         Label12.Location = New Point(35, 345)
         Label12.Margin = New Padding(2, 0, 2, 0)
         Label12.Name = "Label12"
@@ -281,7 +281,7 @@ Partial Class FillupForm
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label13.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
         Label13.Location = New Point(19, 387)
         Label13.Margin = New Padding(2, 0, 2, 0)
         Label13.Name = "Label13"
@@ -292,7 +292,7 @@ Partial Class FillupForm
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label14.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
         Label14.Location = New Point(70, 428)
         Label14.Margin = New Padding(2, 0, 2, 0)
         Label14.Name = "Label14"
@@ -303,7 +303,7 @@ Partial Class FillupForm
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Font = New Font("Franklin Gothic Book", 12.0F, FontStyle.Bold)
+        Label15.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold)
         Label15.Location = New Point(98, 466)
         Label15.Margin = New Padding(2, 0, 2, 0)
         Label15.Name = "Label15"
@@ -379,7 +379,7 @@ Partial Class FillupForm
         ' 
         Button1.BackColor = Color.Brown
         Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Franklin Gothic Medium Cond", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = Color.White
         Button1.Location = New Point(344, 519)
         Button1.Name = "Button1"
@@ -399,7 +399,7 @@ Partial Class FillupForm
         ' 
         btnFillInfo.BackColor = Color.White
         btnFillInfo.FlatStyle = FlatStyle.Flat
-        btnFillInfo.Font = New Font("Franklin Gothic Medium Cond", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnFillInfo.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnFillInfo.ForeColor = Color.Black
         btnFillInfo.Location = New Point(195, 519)
         btnFillInfo.Name = "btnFillInfo"
@@ -410,8 +410,9 @@ Partial Class FillupForm
         ' 
         ' FillupForm
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        AutoSize = True
         BackColor = Color.NavajoWhite
         ClientSize = New Size(516, 586)
         Controls.Add(btnFillInfo)
@@ -441,7 +442,7 @@ Partial Class FillupForm
         MinimizeBox = False
         Name = "FillupForm"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "FillupForm"
+        Text = "Admin Fill Up Form"
         ResumeLayout(False)
         PerformLayout()
     End Sub

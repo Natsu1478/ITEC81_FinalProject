@@ -18,6 +18,10 @@
         LogInForm.Show()
     End Sub
 
+    Public Function assignUsername() As String
+        Dim assignedUsername = txtUsername.Text
+    End Function
+
     Private Sub btnSignUp_Click(sender As Object, e As EventArgs) Handles btnSignUp.Click
         Dim username As String = txtUsername.Text
         Dim password As String = txtPassword.Text
@@ -31,12 +35,12 @@
         End If
         Create_User(username, password, CurrUser)
 
-        txtUsername.Text = ""
-        txtPassword.Text = ""
+        FillupForm.Name = username
         rdbFaculty.Checked = False
         rdbStudent.Checked = False
         Me.Hide()
         FillupForm.Show()
 
     End Sub
+
 End Class

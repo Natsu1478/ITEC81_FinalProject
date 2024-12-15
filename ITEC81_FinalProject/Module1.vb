@@ -1,4 +1,5 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports MySql.Data.MySqlClient
 
 Module Module1
 
@@ -92,5 +93,36 @@ Module Module1
 
             End Try
         End Using
+    End Sub
+
+    Public Sub AddRecord(FirstName As String, MiddleName As String, LastName As String, Department As String, EmailAddress As String, ContactNumber As String, BirthDate As String, Gender As String, username As String)
+        Try
+            conn.Open()
+            Dim query As String = "INSERT INTO tb_admin (FirstName, MiddleName, LastName, Department, EmailAddress, ContactNumber, BirthDate, Gender, username)
+                                VALUES (@FirstName, @MiddleName, @LastName, @Department, @EmailAddress, @ContactNumber, @BirthDate, @Gender, @username)"
+            Dim cmd As New MySqlCommand(query, conn)
+            cmd.Parameters.AddWithValue("@FirstName", FirstName)
+            cmd.Parameters.AddWithValue("@MiddleName", MiddleName)
+            cmd.Parameters.AddWithValue("@LastName", LastName)
+            cmd.Parameters.AddWithValue("@Department", Department)
+            cmd.Parameters.AddWithValue("@EmailAddress", EmailAddress)
+            cmd.Parameters.AddWithValue("@ContactNumber", ContactNumber)
+            cmd.Parameters.AddWithValue("@BirthDate", BirthDate)
+            cmd.Parameters.AddWithValue("@Gender", Gender)
+            cmd.Parameters.AddWithValue("@username", username)
+
+            cmd.ExecuteNonQuery()
+
+            MessageBox.Show("Record Added Successfully", "Add Records", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            conn.Close()
+
+        Catch ex As Exception
+
+            conn.Close()
+            MessageBox.Show("Error: " & ex.Message)
+
+
+        End Try
     End Sub
 End Module
