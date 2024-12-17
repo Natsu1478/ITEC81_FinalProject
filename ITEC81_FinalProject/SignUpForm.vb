@@ -43,4 +43,17 @@
 
     End Sub
 
+    Private Sub Label1_Hover(sender As Object, e As EventArgs) Handles Label1.MouseMove
+        Label1.ForeColor = Color.White
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        Me.Hide()
+        LogInForm.Show()
+    End Sub
+
+    Private Sub Label1_HoverLeave(sender As Object, e As EventArgs) Handles Label1.MouseLeave
+        Label1.ForeColor = Color.Black
+    End Sub
+
 End Class
