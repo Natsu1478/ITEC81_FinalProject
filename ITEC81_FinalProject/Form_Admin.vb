@@ -22,12 +22,11 @@ Public Class Form_Admin
                     lblDept.Text = reader("Department").ToString()
                     txtEmail.Text = reader("EmailAddress").ToString()
                     txtContactNumber.Text = reader("ContactNumber").ToString()
-                    txtDateOfBirth.Text = reader("BirthDate").ToString()
+                    txtDateOfBirth.Text = reader("BirthDate")
                     txtGender.Text = reader("Gender").ToString()
-
-                    Dim MiddleInitial = reader("MiddleName").ToString
-                    lblFullName.Text = reader("LastName").ToString + ", " + reader("FirstName").ToString + " " + MiddleInitial(0) + "."
-                    lblEmail.Text = reader("EmailAddress").ToString
+                    Dim MiddleInitial = reader("MiddleName").ToString()
+                    lblFullName.Text = reader("LastName").ToString() + ", " + reader("FirstName").ToString + " " + MiddleInitial(0) + "."
+                    lblEmail.Text = reader("EmailAddress").ToString()
                     lblContact.Text = reader("ContactNumber").ToString()
                     conn.Close()
                 Else
