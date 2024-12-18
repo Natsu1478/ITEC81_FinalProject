@@ -22,7 +22,7 @@ Partial Class LayoutStudentSchedule
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        pnlProfile = New Panel()
+        pnlSchedule = New Panel()
         Panel11 = New Panel()
         lblContact = New Label()
         lblDept = New Label()
@@ -53,7 +53,7 @@ Partial Class LayoutStudentSchedule
         Panel10 = New Panel()
         Label14 = New Label()
         Label1 = New Label()
-        pnlProfile.SuspendLayout()
+        pnlSchedule.SuspendLayout()
         Panel11.SuspendLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
@@ -69,18 +69,18 @@ Partial Class LayoutStudentSchedule
         Panel10.SuspendLayout()
         SuspendLayout()
         ' 
-        ' pnlProfile
+        ' pnlSchedule
         ' 
-        pnlProfile.AutoSize = True
-        pnlProfile.BorderStyle = BorderStyle.Fixed3D
-        pnlProfile.Controls.Add(Panel11)
-        pnlProfile.Controls.Add(Panel2)
-        pnlProfile.Controls.Add(Label1)
-        pnlProfile.Location = New Point(-9, -8)
-        pnlProfile.Margin = New Padding(4)
-        pnlProfile.Name = "pnlProfile"
-        pnlProfile.Size = New Size(1564, 959)
-        pnlProfile.TabIndex = 3
+        pnlSchedule.AutoSize = True
+        pnlSchedule.BorderStyle = BorderStyle.Fixed3D
+        pnlSchedule.Controls.Add(Panel11)
+        pnlSchedule.Controls.Add(Panel2)
+        pnlSchedule.Controls.Add(Label1)
+        pnlSchedule.Location = New Point(-9, -8)
+        pnlSchedule.Margin = New Padding(4)
+        pnlSchedule.Name = "pnlSchedule"
+        pnlSchedule.Size = New Size(1564, 959)
+        pnlSchedule.TabIndex = 3
         ' 
         ' Panel11
         ' 
@@ -433,12 +433,12 @@ Partial Class LayoutStudentSchedule
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1547, 943)
-        Controls.Add(pnlProfile)
+        Controls.Add(pnlSchedule)
         FormBorderStyle = FormBorderStyle.None
         Name = "LayoutStudentSchedule"
         Text = "LayoutStudentSchedule"
-        pnlProfile.ResumeLayout(False)
-        pnlProfile.PerformLayout()
+        pnlSchedule.ResumeLayout(False)
+        pnlSchedule.PerformLayout()
         Panel11.ResumeLayout(False)
         Panel11.PerformLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
@@ -457,7 +457,7 @@ Partial Class LayoutStudentSchedule
         PerformLayout()
     End Sub
 
-    Friend WithEvents pnlProfile As Panel
+    Friend WithEvents pnlSchedule As Panel
     Friend WithEvents Panel11 As Panel
     Friend WithEvents lblContact As Label
     Friend WithEvents lblDept As Label

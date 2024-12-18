@@ -46,7 +46,7 @@ Partial Class LayoutStudentActivity
         tabActivityList = New TabPage()
         Panel4 = New Panel()
         lstActivityList = New ListView()
-        pnlProfile = New Panel()
+        pnlActivity = New Panel()
         Panel11 = New Panel()
         lblContact = New Label()
         lblDept = New Label()
@@ -68,7 +68,7 @@ Partial Class LayoutStudentActivity
         Panel3.SuspendLayout()
         tabActivityList.SuspendLayout()
         Panel4.SuspendLayout()
-        pnlProfile.SuspendLayout()
+        pnlActivity.SuspendLayout()
         Panel11.SuspendLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
@@ -338,18 +338,18 @@ Partial Class LayoutStudentActivity
         lstActivityList.TabIndex = 19
         lstActivityList.UseCompatibleStateImageBehavior = False
         ' 
-        ' pnlProfile
+        ' pnlActivity
         ' 
-        pnlProfile.AutoSize = True
-        pnlProfile.BorderStyle = BorderStyle.Fixed3D
-        pnlProfile.Controls.Add(Panel11)
-        pnlProfile.Controls.Add(Panel2)
-        pnlProfile.Controls.Add(Label1)
-        pnlProfile.Location = New Point(-9, -8)
-        pnlProfile.Margin = New Padding(4)
-        pnlProfile.Name = "pnlProfile"
-        pnlProfile.Size = New Size(1564, 959)
-        pnlProfile.TabIndex = 2
+        pnlActivity.AutoSize = True
+        pnlActivity.BorderStyle = BorderStyle.Fixed3D
+        pnlActivity.Controls.Add(Panel11)
+        pnlActivity.Controls.Add(Panel2)
+        pnlActivity.Controls.Add(Label1)
+        pnlActivity.Location = New Point(-9, -8)
+        pnlActivity.Margin = New Padding(4)
+        pnlActivity.Name = "pnlActivity"
+        pnlActivity.Size = New Size(1564, 959)
+        pnlActivity.TabIndex = 2
         ' 
         ' Panel11
         ' 
@@ -561,8 +561,9 @@ Partial Class LayoutStudentActivity
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
+        AutoSize = True
         ClientSize = New Size(1547, 943)
-        Controls.Add(pnlProfile)
+        Controls.Add(pnlActivity)
         FormBorderStyle = FormBorderStyle.None
         Name = "LayoutStudentActivity"
         Text = "LayoutStudentActivity"
@@ -572,8 +573,8 @@ Partial Class LayoutStudentActivity
         Panel3.ResumeLayout(False)
         tabActivityList.ResumeLayout(False)
         Panel4.ResumeLayout(False)
-        pnlProfile.ResumeLayout(False)
-        pnlProfile.PerformLayout()
+        pnlActivity.ResumeLayout(False)
+        pnlActivity.PerformLayout()
         Panel11.ResumeLayout(False)
         Panel11.PerformLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
@@ -607,7 +608,7 @@ Partial Class LayoutStudentActivity
     Friend WithEvents Panel4 As Panel
     Friend WithEvents lstActivityList As ListView
     Friend WithEvents btnEnroll As Button
-    Friend WithEvents pnlProfile As Panel
+    Friend WithEvents pnlActivity As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents tabActivity As TabControl
     Friend WithEvents tabActivityEnrollment As TabPage

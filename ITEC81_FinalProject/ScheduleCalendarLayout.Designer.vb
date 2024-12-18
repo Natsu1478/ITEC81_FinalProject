@@ -58,7 +58,7 @@ Partial Class ScheduleCalendarLayout
         Label4 = New Label()
         Label1 = New Label()
         Panel2 = New Panel()
-        pnlProfile = New Panel()
+        pnlSchedule = New Panel()
         tabSchedule.SuspendLayout()
         tabCalendarofActivities.SuspendLayout()
         Panel4.SuspendLayout()
@@ -75,7 +75,7 @@ Partial Class ScheduleCalendarLayout
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
-        pnlProfile.SuspendLayout()
+        pnlSchedule.SuspendLayout()
         SuspendLayout()
         ' 
         ' tabSchedule
@@ -472,25 +472,25 @@ Partial Class ScheduleCalendarLayout
         Panel2.Size = New Size(1512, 617)
         Panel2.TabIndex = 1
         ' 
-        ' pnlProfile
+        ' pnlSchedule
         ' 
-        pnlProfile.AutoSize = True
-        pnlProfile.BorderStyle = BorderStyle.Fixed3D
-        pnlProfile.Controls.Add(Panel1)
-        pnlProfile.Controls.Add(Panel2)
-        pnlProfile.Controls.Add(Label1)
-        pnlProfile.Location = New Point(0, 0)
-        pnlProfile.Margin = New Padding(4)
-        pnlProfile.Name = "pnlProfile"
-        pnlProfile.Size = New Size(1564, 959)
-        pnlProfile.TabIndex = 3
+        pnlSchedule.AutoSize = True
+        pnlSchedule.BorderStyle = BorderStyle.Fixed3D
+        pnlSchedule.Controls.Add(Panel1)
+        pnlSchedule.Controls.Add(Panel2)
+        pnlSchedule.Controls.Add(Label1)
+        pnlSchedule.Location = New Point(0, 0)
+        pnlSchedule.Margin = New Padding(4)
+        pnlSchedule.Name = "pnlSchedule"
+        pnlSchedule.Size = New Size(1564, 959)
+        pnlSchedule.TabIndex = 3
         ' 
         ' ScheduleCalendarLayout
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1565, 958)
-        Controls.Add(pnlProfile)
+        Controls.Add(pnlSchedule)
         Name = "ScheduleCalendarLayout"
         Text = "ScheduleCalendarLayout"
         tabSchedule.ResumeLayout(False)
@@ -510,8 +510,8 @@ Partial Class ScheduleCalendarLayout
         Panel1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
-        pnlProfile.ResumeLayout(False)
-        pnlProfile.PerformLayout()
+        pnlSchedule.ResumeLayout(False)
+        pnlSchedule.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -539,7 +539,7 @@ Partial Class ScheduleCalendarLayout
     Friend WithEvents Label4 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents pnlProfile As Panel
+    Friend WithEvents pnlSchedule As Panel
     Friend WithEvents tabCompletedActivities As TabPage
     Friend WithEvents tabUpcomingActivities As TabPage
     Friend WithEvents lslCalendarofActivities As ListView
