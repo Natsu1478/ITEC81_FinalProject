@@ -77,7 +77,7 @@ Partial Class LogInForm
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Impact", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(129, 80)
+        Label1.Location = New Point(124, 113)
         Label1.Name = "Label1"
         Label1.Size = New Size(191, 45)
         Label1.TabIndex = 2
@@ -117,9 +117,9 @@ Partial Class LogInForm
         PanelLogIn.Controls.Add(txtPassword)
         PanelLogIn.Controls.Add(Label2)
         PanelLogIn.Controls.Add(txtUsername)
-        PanelLogIn.Location = New Point(479, 99)
+        PanelLogIn.Location = New Point(438, 49)
         PanelLogIn.Name = "PanelLogIn"
-        PanelLogIn.Size = New Size(388, 427)
+        PanelLogIn.Size = New Size(429, 583)
         PanelLogIn.TabIndex = 4
         PanelLogIn.Visible = False
         ' 
@@ -127,7 +127,7 @@ Partial Class LogInForm
         ' 
         lblCurrUser.AutoSize = True
         lblCurrUser.Font = New Font("Impact", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblCurrUser.Location = New Point(67, 36)
+        lblCurrUser.Location = New Point(62, 69)
         lblCurrUser.Name = "lblCurrUser"
         lblCurrUser.Size = New Size(176, 54)
         lblCurrUser.TabIndex = 5
@@ -137,10 +137,11 @@ Partial Class LogInForm
         ' btnBack
         ' 
         btnBack.BackColor = Color.Brown
+        btnBack.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
         btnBack.FlatStyle = FlatStyle.Flat
         btnBack.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnBack.ForeColor = Color.White
-        btnBack.Location = New Point(144, 340)
+        btnBack.Location = New Point(278, 381)
         btnBack.Name = "btnBack"
         btnBack.Size = New Size(87, 43)
         btnBack.TabIndex = 6
@@ -152,7 +153,7 @@ Partial Class LogInForm
         btnLogin.BackColor = Color.White
         btnLogin.FlatStyle = FlatStyle.Flat
         btnLogin.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnLogin.Location = New Point(47, 340)
+        btnLogin.Location = New Point(172, 381)
         btnLogin.Name = "btnLogin"
         btnLogin.Size = New Size(87, 43)
         btnLogin.TabIndex = 5
@@ -162,10 +163,11 @@ Partial Class LogInForm
         ' cbxShowPassword
         ' 
         cbxShowPassword.AutoSize = True
-        cbxShowPassword.Location = New Point(238, 251)
+        cbxShowPassword.Location = New Point(233, 284)
         cbxShowPassword.Name = "cbxShowPassword"
         cbxShowPassword.Size = New Size(132, 24)
-        cbxShowPassword.TabIndex = 4
+        cbxShowPassword.TabIndex = 0
+        cbxShowPassword.TabStop = False
         cbxShowPassword.Text = "Show Password"
         cbxShowPassword.UseVisualStyleBackColor = True
         ' 
@@ -173,7 +175,7 @@ Partial Class LogInForm
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(47, 207)
+        Label3.Location = New Point(42, 240)
         Label3.Name = "Label3"
         Label3.Size = New Size(87, 25)
         Label3.TabIndex = 3
@@ -182,17 +184,18 @@ Partial Class LogInForm
         ' txtPassword
         ' 
         txtPassword.Font = New Font("Franklin Gothic Book", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtPassword.Location = New Point(144, 201)
+        txtPassword.Location = New Point(139, 234)
         txtPassword.Name = "txtPassword"
         txtPassword.PasswordChar = "*"c
         txtPassword.Size = New Size(226, 28)
         txtPassword.TabIndex = 2
+        txtPassword.TabStop = False
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(47, 167)
+        Label2.Location = New Point(42, 200)
         Label2.Name = "Label2"
         Label2.Size = New Size(91, 25)
         Label2.TabIndex = 1
@@ -201,10 +204,11 @@ Partial Class LogInForm
         ' txtUsername
         ' 
         txtUsername.Font = New Font("Franklin Gothic Book", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtUsername.Location = New Point(144, 158)
+        txtUsername.Location = New Point(139, 191)
         txtUsername.Name = "txtUsername"
         txtUsername.Size = New Size(226, 28)
         txtUsername.TabIndex = 0
+        txtUsername.TabStop = False
         ' 
         ' Label4
         ' 
@@ -234,10 +238,10 @@ Partial Class LogInForm
         BackColor = Color.White
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(867, 632)
-        Controls.Add(PanelUserOption)
         Controls.Add(Panel1)
         Controls.Add(Label4)
         Controls.Add(PanelLogIn)
+        Controls.Add(PanelUserOption)
         FormBorderStyle = FormBorderStyle.None
         MaximizeBox = False
         Name = "LogInForm"

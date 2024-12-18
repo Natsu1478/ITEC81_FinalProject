@@ -2,11 +2,68 @@
     Private Sub btn_Click(sender As Object, e As EventArgs) Handles btn_Admin.Click, btnStudent.Click
         If sender Is btn_Admin Then
             lblCurrUser.Text = "ADMIN"
+            btnBack.BackColor = Color.Maroon
         ElseIf sender Is btnStudent Then
             lblCurrUser.Text = "STUDENT"
+            btnBack.BackColor = Color.Navy
         End If
         PanelUserOption.Visible = False
         PanelLogIn.Visible = True
+    End Sub
+
+    Private Sub btn_Hover(sender As Object, e As EventArgs) Handles btnLogin.MouseMove, btnBack.MouseMove
+
+        If lblCurrUser.Text Is "ADMIN" Then
+            If sender Is btnLogin Then
+                sender.ForeColor = Color.White
+                sender.BackColor = Color.Maroon
+            ElseIf sender Is btnBack Then
+                sender.ForeColor = Color.Black
+                sender.BackColor = Color.White
+            End If
+        Else
+            If sender Is btnLogin Then
+                sender.ForeColor = Color.White
+                sender.BackColor = Color.Navy
+            ElseIf sender Is btnBack Then
+                sender.ForeColor = Color.Black
+                sender.BackColor = Color.White
+            End If
+        End If
+
+    End Sub
+
+    Private Sub btn_Hover(sender As Object, e As EventArgs) Handles btnLogin.MouseMove, btnBack.MouseMove
+
+        If lblCurrUser.Text Is "ADMIN" Then
+            If sender Is btnLogin Then
+                sender.ForeColor = Color.White
+                sender.BackColor = Color.Maroon
+            ElseIf sender Is btnBack Then
+                sender.ForeColor = Color.Black
+                sender.BackColor = Color.White
+            End If
+        Else
+            If sender Is btnLogin Then
+                sender.ForeColor = Color.White
+                sender.BackColor = Color.Navy
+            ElseIf sender Is btnBack Then
+                sender.ForeColor = Color.Black
+                sender.BackColor = Color.White
+            End If
+        End If
+
+    End Sub
+
+    Private Sub btn_HoverLeave(sender As Object, e As EventArgs) Handles btnLogin.MouseLeave, btnBack.MouseLeave
+        btnBack.ForeColor = Color.White
+        btnLogin.ForeColor = Color.Black
+        If lblCurrUser.Text Is "ADMIN" Then
+            btnBack.BackColor = Color.Maroon
+        Else
+            btnBack.BackColor = Color.Navy
+        End If
+
     End Sub
 
     Private Sub ButtonHover(sender As Object, e As EventArgs) Handles btn_Admin.MouseMove, btnStudent.MouseMove
