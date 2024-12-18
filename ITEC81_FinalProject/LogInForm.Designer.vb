@@ -36,32 +36,40 @@ Partial Class LogInForm
         txtPassword = New TextBox()
         Label2 = New Label()
         txtUsername = New TextBox()
+        Label4 = New Label()
+        Panel1 = New Panel()
         PanelUserOption.SuspendLayout()
         PanelLogIn.SuspendLayout()
         SuspendLayout()
         ' 
         ' btn_Admin
         ' 
-        btn_Admin.BackColor = Color.Brown
+        btn_Admin.BackColor = Color.White
+        btn_Admin.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
+        btn_Admin.FlatAppearance.MouseOverBackColor = Color.Maroon
         btn_Admin.FlatStyle = FlatStyle.Flat
         btn_Admin.Font = New Font("Georgia", 18F, FontStyle.Bold)
-        btn_Admin.ForeColor = Color.White
-        btn_Admin.Location = New Point(93, 80)
+        btn_Admin.ForeColor = Color.Black
+        btn_Admin.Location = New Point(44, 53)
         btn_Admin.Name = "btn_Admin"
-        btn_Admin.Size = New Size(250, 111)
+        btn_Admin.Size = New Size(337, 173)
         btn_Admin.TabIndex = 0
+        btn_Admin.TabStop = False
         btn_Admin.Text = "FACULTY"
         btn_Admin.UseVisualStyleBackColor = False
         ' 
         ' btnStudent
         ' 
         btnStudent.BackColor = Color.White
+        btnStudent.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(0), CByte(0), CByte(64))
+        btnStudent.FlatAppearance.MouseOverBackColor = Color.Navy
         btnStudent.FlatStyle = FlatStyle.Flat
         btnStudent.Font = New Font("Georgia", 18F, FontStyle.Bold)
-        btnStudent.Location = New Point(93, 220)
+        btnStudent.Location = New Point(44, 251)
         btnStudent.Name = "btnStudent"
-        btnStudent.Size = New Size(250, 111)
-        btnStudent.TabIndex = 1
+        btnStudent.Size = New Size(337, 173)
+        btnStudent.TabIndex = 0
+        btnStudent.TabStop = False
         btnStudent.Text = "STUDENT"
         btnStudent.UseVisualStyleBackColor = False
         ' 
@@ -77,24 +85,25 @@ Partial Class LogInForm
         ' 
         ' PanelUserOption
         ' 
+        PanelUserOption.BackColor = Color.Transparent
         PanelUserOption.Controls.Add(lblCreateAccount)
         PanelUserOption.Controls.Add(btn_Admin)
         PanelUserOption.Controls.Add(btnStudent)
-        PanelUserOption.Location = New Point(22, 34)
+        PanelUserOption.Location = New Point(438, 49)
         PanelUserOption.Name = "PanelUserOption"
-        PanelUserOption.Size = New Size(428, 427)
+        PanelUserOption.Size = New Size(429, 583)
         PanelUserOption.TabIndex = 3
         ' 
         ' lblCreateAccount
         ' 
         lblCreateAccount.AutoSize = True
         lblCreateAccount.FlatStyle = FlatStyle.Flat
-        lblCreateAccount.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblCreateAccount.ForeColor = Color.Brown
-        lblCreateAccount.Location = New Point(140, 358)
+        lblCreateAccount.Font = New Font("Freestyle Script", 22.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblCreateAccount.ForeColor = Color.Black
+        lblCreateAccount.Location = New Point(128, 457)
         lblCreateAccount.Name = "lblCreateAccount"
-        lblCreateAccount.Size = New Size(154, 25)
-        lblCreateAccount.TabIndex = 2
+        lblCreateAccount.Size = New Size(180, 44)
+        lblCreateAccount.TabIndex = 0
         lblCreateAccount.Text = "Create Account"
         ' 
         ' PanelLogIn
@@ -108,9 +117,9 @@ Partial Class LogInForm
         PanelLogIn.Controls.Add(txtPassword)
         PanelLogIn.Controls.Add(Label2)
         PanelLogIn.Controls.Add(txtUsername)
-        PanelLogIn.Location = New Point(22, 34)
+        PanelLogIn.Location = New Point(479, 99)
         PanelLogIn.Name = "PanelLogIn"
-        PanelLogIn.Size = New Size(428, 427)
+        PanelLogIn.Size = New Size(388, 427)
         PanelLogIn.TabIndex = 4
         PanelLogIn.Visible = False
         ' 
@@ -197,15 +206,39 @@ Partial Class LogInForm
         txtUsername.Size = New Size(226, 28)
         txtUsername.TabIndex = 0
         ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.BackColor = Color.Transparent
+        Label4.FlatStyle = FlatStyle.Popup
+        Label4.Font = New Font("Tempus Sans ITC", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.Location = New Point(818, 9)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(31, 39)
+        Label4.TabIndex = 10
+        Label4.Text = "x"
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackgroundImage = My.Resources.Resources.bg5
+        Panel1.BackgroundImageLayout = ImageLayout.Stretch
+        Panel1.Location = New Point(0, -5)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(440, 637)
+        Panel1.TabIndex = 11
+        ' 
         ' LogInForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.NavajoWhite
-        ClientSize = New Size(485, 493)
-        Controls.Add(PanelLogIn)
+        BackColor = Color.White
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(867, 632)
         Controls.Add(PanelUserOption)
-        FormBorderStyle = FormBorderStyle.Fixed3D
+        Controls.Add(Panel1)
+        Controls.Add(Label4)
+        Controls.Add(PanelLogIn)
+        FormBorderStyle = FormBorderStyle.None
         MaximizeBox = False
         Name = "LogInForm"
         StartPosition = FormStartPosition.CenterScreen
@@ -215,6 +248,7 @@ Partial Class LogInForm
         PanelLogIn.ResumeLayout(False)
         PanelLogIn.PerformLayout()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents btn_Admin As Button
@@ -231,4 +265,6 @@ Partial Class LogInForm
     Friend WithEvents btnBack As Button
     Friend WithEvents lblCurrUser As Label
     Friend WithEvents lblCreateAccount As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Panel1 As Panel
 End Class
