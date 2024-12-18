@@ -13,7 +13,7 @@
 
     Private Sub btn_Hover(sender As Object, e As EventArgs) Handles btnLogin.MouseMove, btnBack.MouseMove
 
-        If lblCurrUser.Text Is "ADMIN" Then
+        If lblCurrUser.Text = "ADMIN" Then
             If sender Is btnLogin Then
                 sender.ForeColor = Color.White
                 sender.BackColor = Color.Maroon
@@ -21,7 +21,7 @@
                 sender.ForeColor = Color.Black
                 sender.BackColor = Color.White
             End If
-        Else
+        ElseIf lblCurrUser.Text = "STUDENT" Then
             If sender Is btnLogin Then
                 sender.ForeColor = Color.White
                 sender.BackColor = Color.Navy
@@ -33,35 +33,26 @@
 
     End Sub
 
-    Private Sub btn_Hover(sender As Object, e As EventArgs) Handles btnLogin.MouseMove, btnBack.MouseMove
-
-        If lblCurrUser.Text Is "ADMIN" Then
-            If sender Is btnLogin Then
-                sender.ForeColor = Color.White
-                sender.BackColor = Color.Maroon
-            ElseIf sender Is btnBack Then
-                sender.ForeColor = Color.Black
-                sender.BackColor = Color.White
-            End If
-        Else
-            If sender Is btnLogin Then
-                sender.ForeColor = Color.White
-                sender.BackColor = Color.Navy
-            ElseIf sender Is btnBack Then
-                sender.ForeColor = Color.Black
-                sender.BackColor = Color.White
-            End If
-        End If
-
-    End Sub
 
     Private Sub btn_HoverLeave(sender As Object, e As EventArgs) Handles btnLogin.MouseLeave, btnBack.MouseLeave
-        btnBack.ForeColor = Color.White
-        btnLogin.ForeColor = Color.Black
-        If lblCurrUser.Text Is "ADMIN" Then
-            btnBack.BackColor = Color.Maroon
-        Else
-            btnBack.BackColor = Color.Navy
+
+        If lblCurrUser.Text = "ADMIN" Then
+            If sender Is btnLogin Then
+                sender.ForeColor = Color.Black
+                sender.BackColor = Color.White
+            ElseIf sender Is btnBack Then
+                sender.ForeColor = Color.White
+                sender.BackColor = Color.Maroon
+            End If
+        ElseIf lblCurrUser.Text = "STUDENT" Then
+
+            If sender Is btnLogin Then
+                sender.ForeColor = Color.Black
+                sender.BackColor = Color.White
+            ElseIf sender Is btnBack Then
+                sender.ForeColor = Color.White
+                sender.BackColor = Color.Navy
+            End If
         End If
 
     End Sub

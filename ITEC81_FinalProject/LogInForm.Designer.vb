@@ -137,7 +137,6 @@ Partial Class LogInForm
         ' btnBack
         ' 
         btnBack.BackColor = Color.Brown
-        btnBack.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
         btnBack.FlatStyle = FlatStyle.Flat
         btnBack.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnBack.ForeColor = Color.White
