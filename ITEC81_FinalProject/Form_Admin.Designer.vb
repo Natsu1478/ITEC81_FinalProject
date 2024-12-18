@@ -140,9 +140,9 @@ Partial Class Form_Admin
         pnlProfile.Controls.Add(Panel11)
         pnlProfile.Controls.Add(Panel9)
         pnlProfile.Controls.Add(Label14)
-        pnlProfile.Location = New Point(3, 0)
+        pnlProfile.Location = New Point(0, 0)
         pnlProfile.Name = "pnlProfile"
-        pnlProfile.Size = New Size(1239, 768)
+        pnlProfile.Size = New Size(1259, 768)
         pnlProfile.TabIndex = 2
         ' 
         ' Panel11
@@ -1018,10 +1018,13 @@ Partial Class Form_Admin
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        AutoSize = True
         ClientSize = New Size(1539, 826)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
+        FormBorderStyle = FormBorderStyle.None
         Name = "Form_Admin"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Form_Admin"
         Panel1.ResumeLayout(False)
         pnlMAIN.ResumeLayout(False)

@@ -9,6 +9,17 @@
         PanelLogIn.Visible = True
     End Sub
 
+    Private Sub ButtonHover(sender As Object, e As EventArgs) Handles btn_Admin.MouseMove, btnStudent.MouseMove
+        sender.ForeColor = Color.White
+        sender.FlatAppearance.BorderSize = 0
+    End Sub
+
+    Private Sub ButtonHoverLeave(sender As Object, e As EventArgs) Handles btn_Admin.MouseLeave, btnStudent.MouseLeave
+        sender.ForeColor = Color.Black
+        sender.FlatAppearance.BorderSize = 1
+    End Sub
+
+
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Dim username As String = txtUsername.Text
         Dim password As String = txtPassword.Text
@@ -35,13 +46,6 @@
 
     End Sub
 
-    Private Sub Hover(sender As Object, e As EventArgs) Handles lblCreateAccount.MouseMove
-        lblCreateAccount.ForeColor = Color.White
-    End Sub
-
-    Private Sub HoverLeave(sender As Object, e As EventArgs) Handles lblCreateAccount.MouseLeave
-        lblCreateAccount.ForeColor = Color.Maroon
-    End Sub
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         PanelUserOption.Visible = True
@@ -59,8 +63,24 @@
         End If
     End Sub
 
-    Private Sub lclCreateAccount_Click(sender As Object, e As EventArgs) Handles lblCreateAccount.Click
+    Private Sub lblCreateAccount_Click(sender As Object, e As EventArgs) Handles lblCreateAccount.Click
         Me.Hide()
         SignUpForm.Show()
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+        Dim result As DialogResult = MessageBox.Show("Exit Program?", "Close Program.", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
+
+        If result = DialogResult.Yes Then
+            Me.Hide()
+        End If
+    End Sub
+
+    Private Sub Label4_Hover(sender As Object, e As EventArgs) Handles Label4.MouseMove, lblCreateAccount.MouseMove
+        sender.ForeColor = Color.Maroon
+    End Sub
+
+    Private Sub Label4_HoverLeave(sender As Object, e As EventArgs) Handles Label4.MouseLeave, lblCreateAccount.MouseLeave
+        sender.ForeColor = Color.Black
     End Sub
 End Class
