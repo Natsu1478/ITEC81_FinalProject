@@ -23,6 +23,7 @@ Partial Class SignUpForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         PanelLogIn = New Panel()
+        Label1 = New Label()
         GroupBox1 = New GroupBox()
         rdbFaculty = New RadioButton()
         rdbStudent = New RadioButton()
@@ -33,7 +34,6 @@ Partial Class SignUpForm
         Label2 = New Label()
         txtUsername = New TextBox()
         PictureBox1 = New PictureBox()
-        Label1 = New Label()
         PanelLogIn.SuspendLayout()
         GroupBox1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -52,10 +52,25 @@ Partial Class SignUpForm
         PanelLogIn.Controls.Add(Label2)
         PanelLogIn.Controls.Add(txtUsername)
         PanelLogIn.Controls.Add(PictureBox1)
-        PanelLogIn.Location = New Point(-3, -1)
+        PanelLogIn.Location = New Point(0, 1)
+        PanelLogIn.Margin = New Padding(4)
         PanelLogIn.Name = "PanelLogIn"
-        PanelLogIn.Size = New Size(522, 629)
+        PanelLogIn.Size = New Size(600, 700)
         PanelLogIn.TabIndex = 5
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.FlatStyle = FlatStyle.Popup
+        Label1.Font = New Font("Tempus Sans ITC", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.Transparent
+        Label1.Location = New Point(551, 18)
+        Label1.Margin = New Padding(4, 0, 4, 0)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(36, 47)
+        Label1.TabIndex = 9
+        Label1.Text = "x"
         ' 
         ' GroupBox1
         ' 
@@ -66,9 +81,11 @@ Partial Class SignUpForm
         GroupBox1.FlatStyle = FlatStyle.Flat
         GroupBox1.Font = New Font("Franklin Gothic Book", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox1.ForeColor = Color.White
-        GroupBox1.Location = New Point(87, 334)
+        GroupBox1.Location = New Point(95, 418)
+        GroupBox1.Margin = New Padding(4)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(328, 80)
+        GroupBox1.Padding = New Padding(4)
+        GroupBox1.Size = New Size(410, 100)
         GroupBox1.TabIndex = 7
         GroupBox1.TabStop = False
         GroupBox1.Text = "User Category:"
@@ -77,9 +94,10 @@ Partial Class SignUpForm
         ' 
         rdbFaculty.AutoSize = True
         rdbFaculty.Font = New Font("Franklin Gothic Book", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        rdbFaculty.Location = New Point(193, 27)
+        rdbFaculty.Location = New Point(241, 34)
+        rdbFaculty.Margin = New Padding(4)
         rdbFaculty.Name = "rdbFaculty"
-        rdbFaculty.Size = New Size(85, 27)
+        rdbFaculty.Size = New Size(103, 32)
         rdbFaculty.TabIndex = 1
         rdbFaculty.TabStop = True
         rdbFaculty.Text = "Faculty"
@@ -89,9 +107,10 @@ Partial Class SignUpForm
         ' 
         rdbStudent.AutoSize = True
         rdbStudent.Font = New Font("Franklin Gothic Book", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        rdbStudent.Location = New Point(75, 27)
+        rdbStudent.Location = New Point(94, 34)
+        rdbStudent.Margin = New Padding(4)
         rdbStudent.Name = "rdbStudent"
-        rdbStudent.Size = New Size(92, 27)
+        rdbStudent.Size = New Size(111, 32)
         rdbStudent.TabIndex = 0
         rdbStudent.TabStop = True
         rdbStudent.Text = "Student"
@@ -105,9 +124,10 @@ Partial Class SignUpForm
         btnBack.FlatStyle = FlatStyle.Flat
         btnBack.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnBack.ForeColor = Color.LightGray
-        btnBack.Location = New Point(328, 482)
+        btnBack.Location = New Point(432, 586)
+        btnBack.Margin = New Padding(4)
         btnBack.Name = "btnBack"
-        btnBack.Size = New Size(87, 43)
+        btnBack.Size = New Size(109, 54)
         btnBack.TabIndex = 6
         btnBack.Text = "Back"
         btnBack.UseVisualStyleBackColor = False
@@ -120,9 +140,10 @@ Partial Class SignUpForm
         btnSignUp.FlatStyle = FlatStyle.Flat
         btnSignUp.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnSignUp.ForeColor = Color.Gainsboro
-        btnSignUp.Location = New Point(224, 482)
+        btnSignUp.Location = New Point(302, 586)
+        btnSignUp.Margin = New Padding(4)
         btnSignUp.Name = "btnSignUp"
-        btnSignUp.Size = New Size(87, 43)
+        btnSignUp.Size = New Size(109, 54)
         btnSignUp.TabIndex = 5
         btnSignUp.Text = "Sign Up"
         btnSignUp.UseVisualStyleBackColor = False
@@ -133,18 +154,20 @@ Partial Class SignUpForm
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(92, 290)
+        Label3.Location = New Point(101, 362)
+        Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(87, 25)
+        Label3.Size = New Size(102, 30)
         Label3.TabIndex = 3
         Label3.Text = "Password:"
         ' 
         ' txtPassword
         ' 
         txtPassword.Font = New Font("Franklin Gothic Book", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtPassword.Location = New Point(189, 285)
+        txtPassword.Location = New Point(222, 356)
+        txtPassword.Margin = New Padding(4)
         txtPassword.Name = "txtPassword"
-        txtPassword.Size = New Size(226, 28)
+        txtPassword.Size = New Size(282, 32)
         txtPassword.TabIndex = 2
         ' 
         ' Label2
@@ -153,51 +176,43 @@ Partial Class SignUpForm
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(92, 251)
+        Label2.Location = New Point(101, 314)
+        Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(91, 25)
+        Label2.Size = New Size(109, 30)
         Label2.TabIndex = 1
         Label2.Text = "Username:"
         ' 
         ' txtUsername
         ' 
         txtUsername.Font = New Font("Franklin Gothic Book", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtUsername.Location = New Point(189, 242)
+        txtUsername.Location = New Point(222, 302)
+        txtUsername.Margin = New Padding(4)
         txtUsername.Name = "txtUsername"
-        txtUsername.Size = New Size(226, 28)
+        txtUsername.Size = New Size(282, 32)
         txtUsername.TabIndex = 0
         ' 
         ' PictureBox1
         ' 
         PictureBox1.BackColor = Color.Transparent
         PictureBox1.Image = My.Resources.Resources.SIGN_UP_FORM_removebg_preview
-        PictureBox1.Location = New Point(71, 89)
+        PictureBox1.Location = New Point(62, 101)
+        PictureBox1.Margin = New Padding(4)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(383, 125)
+        PictureBox1.Size = New Size(479, 156)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 8
         PictureBox1.TabStop = False
         ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
-        Label1.FlatStyle = FlatStyle.Popup
-        Label1.Font = New Font("Tempus Sans ITC", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(474, 10)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(31, 39)
-        Label1.TabIndex = 9
-        Label1.Text = "x"
-        ' 
         ' SignUpForm
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(514, 620)
+        ClientSize = New Size(600, 700)
         ControlBox = False
         Controls.Add(PanelLogIn)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(4)
         Name = "SignUpForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "SignUpForm"

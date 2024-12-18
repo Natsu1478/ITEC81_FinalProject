@@ -23,27 +23,6 @@ Partial Class layout
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         pnlProfile = New Panel()
-        Panel2 = New Panel()
-        tabAboutMe = New TabControl()
-        tab1 = New TabPage()
-        Panel4 = New Panel()
-        TextBox7 = New TextBox()
-        TextBox6 = New TextBox()
-        TextBox5 = New TextBox()
-        TextBox4 = New TextBox()
-        TextBox3 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox1 = New TextBox()
-        Label19 = New Label()
-        Label18 = New Label()
-        Label17 = New Label()
-        Label16 = New Label()
-        Label15 = New Label()
-        Label14 = New Label()
-        Label13 = New Label()
-        Panel3 = New Panel()
-        Label12 = New Label()
-        Label1 = New Label()
         Panel1 = New Panel()
         Label11 = New Label()
         Label10 = New Label()
@@ -56,14 +35,39 @@ Partial Class layout
         Label2 = New Label()
         PictureBox1 = New PictureBox()
         Label4 = New Label()
+        Panel2 = New Panel()
+        tabAboutMe = New TabControl()
+        tab1 = New TabPage()
+        Panel4 = New Panel()
+        txtContactNumber = New TextBox()
+        txtEmail = New TextBox()
+        txtDateOfBirth = New TextBox()
+        txtGender = New TextBox()
+        txtMiddleName = New TextBox()
+        txtFirstName = New TextBox()
+        txtLastName = New TextBox()
+        Label19 = New Label()
+        Label18 = New Label()
+        Label17 = New Label()
+        Label16 = New Label()
+        Label15 = New Label()
+        Label14 = New Label()
+        Label13 = New Label()
+        Panel3 = New Panel()
+        Label12 = New Label()
+        Label1 = New Label()
+        txtStudentNum = New TextBox()
+        Label20 = New Label()
+        Label21 = New Label()
+        txtCourse = New TextBox()
         pnlProfile.SuspendLayout()
+        Panel1.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
         tabAboutMe.SuspendLayout()
         tab1.SuspendLayout()
         Panel4.SuspendLayout()
         Panel3.SuspendLayout()
-        Panel1.SuspendLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' pnlProfile
@@ -78,218 +82,6 @@ Partial Class layout
         pnlProfile.Name = "pnlProfile"
         pnlProfile.Size = New Size(1564, 959)
         pnlProfile.TabIndex = 0
-        ' 
-        ' Panel2
-        ' 
-        Panel2.Controls.Add(tabAboutMe)
-        Panel2.Location = New Point(26, 319)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(1512, 617)
-        Panel2.TabIndex = 1
-        ' 
-        ' tabAboutMe
-        ' 
-        tabAboutMe.Appearance = TabAppearance.Buttons
-        tabAboutMe.Controls.Add(tab1)
-        tabAboutMe.Font = New Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        tabAboutMe.Location = New Point(3, 3)
-        tabAboutMe.Name = "tabAboutMe"
-        tabAboutMe.SelectedIndex = 0
-        tabAboutMe.Size = New Size(1506, 611)
-        tabAboutMe.TabIndex = 1
-        ' 
-        ' tab1
-        ' 
-        tab1.Controls.Add(Panel4)
-        tab1.Controls.Add(Panel3)
-        tab1.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        tab1.Location = New Point(4, 41)
-        tab1.Name = "tab1"
-        tab1.Padding = New Padding(3)
-        tab1.Size = New Size(1498, 566)
-        tab1.TabIndex = 0
-        tab1.Text = "About Me"
-        tab1.UseVisualStyleBackColor = True
-        ' 
-        ' Panel4
-        ' 
-        Panel4.BorderStyle = BorderStyle.Fixed3D
-        Panel4.Controls.Add(TextBox7)
-        Panel4.Controls.Add(TextBox6)
-        Panel4.Controls.Add(TextBox5)
-        Panel4.Controls.Add(TextBox4)
-        Panel4.Controls.Add(TextBox3)
-        Panel4.Controls.Add(TextBox2)
-        Panel4.Controls.Add(TextBox1)
-        Panel4.Controls.Add(Label19)
-        Panel4.Controls.Add(Label18)
-        Panel4.Controls.Add(Label17)
-        Panel4.Controls.Add(Label16)
-        Panel4.Controls.Add(Label15)
-        Panel4.Controls.Add(Label14)
-        Panel4.Controls.Add(Label13)
-        Panel4.Location = New Point(17, 133)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(1465, 411)
-        Panel4.TabIndex = 1
-        ' 
-        ' TextBox7
-        ' 
-        TextBox7.Enabled = False
-        TextBox7.Location = New Point(968, 276)
-        TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(314, 35)
-        TextBox7.TabIndex = 12
-        ' 
-        ' TextBox6
-        ' 
-        TextBox6.Enabled = False
-        TextBox6.Location = New Point(968, 199)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(314, 35)
-        TextBox6.TabIndex = 11
-        ' 
-        ' TextBox5
-        ' 
-        TextBox5.Enabled = False
-        TextBox5.Location = New Point(971, 128)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(314, 35)
-        TextBox5.TabIndex = 10
-        ' 
-        ' TextBox4
-        ' 
-        TextBox4.Enabled = False
-        TextBox4.Location = New Point(971, 63)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(314, 35)
-        TextBox4.TabIndex = 8
-        ' 
-        ' TextBox3
-        ' 
-        TextBox3.Enabled = False
-        TextBox3.Location = New Point(309, 261)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(314, 35)
-        TextBox3.TabIndex = 9
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.Enabled = False
-        TextBox2.Location = New Point(309, 173)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(314, 35)
-        TextBox2.TabIndex = 8
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Enabled = False
-        TextBox1.Location = New Point(309, 98)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(314, 35)
-        TextBox1.TabIndex = 7
-        ' 
-        ' Label19
-        ' 
-        Label19.AutoSize = True
-        Label19.Font = New Font("Tahoma", 12F, FontStyle.Bold)
-        Label19.Location = New Point(762, 281)
-        Label19.Name = "Label19"
-        Label19.Size = New Size(218, 29)
-        Label19.TabIndex = 6
-        Label19.Text = "Contact Number:"
-        ' 
-        ' Label18
-        ' 
-        Label18.AutoSize = True
-        Label18.Font = New Font("Tahoma", 12F, FontStyle.Bold)
-        Label18.Location = New Point(882, 204)
-        Label18.Name = "Label18"
-        Label18.Size = New Size(88, 29)
-        Label18.TabIndex = 5
-        Label18.Text = "Email:"
-        ' 
-        ' Label17
-        ' 
-        Label17.AutoSize = True
-        Label17.Font = New Font("Tahoma", 12F, FontStyle.Bold)
-        Label17.Location = New Point(803, 133)
-        Label17.Name = "Label17"
-        Label17.Size = New Size(174, 29)
-        Label17.TabIndex = 4
-        Label17.Text = "Date of Birth:"
-        ' 
-        ' Label16
-        ' 
-        Label16.AutoSize = True
-        Label16.Font = New Font("Tahoma", 12F, FontStyle.Bold)
-        Label16.Location = New Point(863, 68)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(108, 29)
-        Label16.TabIndex = 3
-        Label16.Text = "Gender:"
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.Font = New Font("Tahoma", 12F, FontStyle.Bold)
-        Label15.Location = New Point(134, 264)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(178, 29)
-        Label15.TabIndex = 2
-        Label15.Text = "Middle Name:"
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.Font = New Font("Tahoma", 12F, FontStyle.Bold)
-        Label14.Location = New Point(161, 178)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(152, 29)
-        Label14.TabIndex = 1
-        Label14.Text = "First Name:"
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.Font = New Font("Tahoma", 12F, FontStyle.Bold)
-        Label13.Location = New Point(163, 103)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(149, 29)
-        Label13.TabIndex = 0
-        Label13.Text = "Last Name:"
-        ' 
-        ' Panel3
-        ' 
-        Panel3.BackColor = Color.Firebrick
-        Panel3.BorderStyle = BorderStyle.Fixed3D
-        Panel3.Controls.Add(Label12)
-        Panel3.ForeColor = Color.White
-        Panel3.Location = New Point(17, 19)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(1465, 91)
-        Panel3.TabIndex = 0
-        ' 
-        ' Label12
-        ' 
-        Label12.Font = New Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.Image = My.Resources.Resources.icons8_info_22
-        Label12.ImageAlign = ContentAlignment.MiddleLeft
-        Label12.Location = New Point(24, 18)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(389, 43)
-        Label12.TabIndex = 0
-        Label12.Text = "    Basic Information"
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Tahoma", 16F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(26, 12)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(235, 39)
-        Label1.TabIndex = 0
-        Label1.Text = "Admin Profile"
         ' 
         ' Panel1
         ' 
@@ -443,6 +235,258 @@ Partial Class layout
         Label4.TabIndex = 3
         Label4.Text = "___________________________________________________________________________"
         ' 
+        ' Panel2
+        ' 
+        Panel2.Controls.Add(tabAboutMe)
+        Panel2.Location = New Point(26, 319)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(1512, 617)
+        Panel2.TabIndex = 1
+        ' 
+        ' tabAboutMe
+        ' 
+        tabAboutMe.Appearance = TabAppearance.Buttons
+        tabAboutMe.Controls.Add(tab1)
+        tabAboutMe.Font = New Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        tabAboutMe.Location = New Point(3, 3)
+        tabAboutMe.Name = "tabAboutMe"
+        tabAboutMe.SelectedIndex = 0
+        tabAboutMe.Size = New Size(1506, 611)
+        tabAboutMe.TabIndex = 1
+        ' 
+        ' tab1
+        ' 
+        tab1.Controls.Add(Panel4)
+        tab1.Controls.Add(Panel3)
+        tab1.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        tab1.Location = New Point(4, 41)
+        tab1.Name = "tab1"
+        tab1.Padding = New Padding(3)
+        tab1.Size = New Size(1498, 566)
+        tab1.TabIndex = 0
+        tab1.Text = "About Me"
+        tab1.UseVisualStyleBackColor = True
+        ' 
+        ' Panel4
+        ' 
+        Panel4.BorderStyle = BorderStyle.Fixed3D
+        Panel4.Controls.Add(txtCourse)
+        Panel4.Controls.Add(Label21)
+        Panel4.Controls.Add(Label20)
+        Panel4.Controls.Add(txtStudentNum)
+        Panel4.Controls.Add(txtContactNumber)
+        Panel4.Controls.Add(txtEmail)
+        Panel4.Controls.Add(txtDateOfBirth)
+        Panel4.Controls.Add(txtGender)
+        Panel4.Controls.Add(txtMiddleName)
+        Panel4.Controls.Add(txtFirstName)
+        Panel4.Controls.Add(txtLastName)
+        Panel4.Controls.Add(Label19)
+        Panel4.Controls.Add(Label18)
+        Panel4.Controls.Add(Label17)
+        Panel4.Controls.Add(Label16)
+        Panel4.Controls.Add(Label15)
+        Panel4.Controls.Add(Label14)
+        Panel4.Controls.Add(Label13)
+        Panel4.Location = New Point(17, 133)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(1465, 411)
+        Panel4.TabIndex = 1
+        ' 
+        ' txtContactNumber
+        ' 
+        txtContactNumber.Enabled = False
+        txtContactNumber.Location = New Point(943, 328)
+        txtContactNumber.Name = "txtContactNumber"
+        txtContactNumber.Size = New Size(314, 35)
+        txtContactNumber.TabIndex = 12
+        ' 
+        ' txtEmail
+        ' 
+        txtEmail.Enabled = False
+        txtEmail.Location = New Point(943, 261)
+        txtEmail.Name = "txtEmail"
+        txtEmail.Size = New Size(314, 35)
+        txtEmail.TabIndex = 11
+        ' 
+        ' txtDateOfBirth
+        ' 
+        txtDateOfBirth.Enabled = False
+        txtDateOfBirth.Location = New Point(943, 193)
+        txtDateOfBirth.Name = "txtDateOfBirth"
+        txtDateOfBirth.Size = New Size(314, 35)
+        txtDateOfBirth.TabIndex = 10
+        ' 
+        ' txtGender
+        ' 
+        txtGender.Enabled = False
+        txtGender.Location = New Point(943, 120)
+        txtGender.Name = "txtGender"
+        txtGender.Size = New Size(314, 35)
+        txtGender.TabIndex = 8
+        ' 
+        ' txtMiddleName
+        ' 
+        txtMiddleName.Enabled = False
+        txtMiddleName.Location = New Point(328, 270)
+        txtMiddleName.Name = "txtMiddleName"
+        txtMiddleName.Size = New Size(314, 35)
+        txtMiddleName.TabIndex = 9
+        ' 
+        ' txtFirstName
+        ' 
+        txtFirstName.Enabled = False
+        txtFirstName.Location = New Point(328, 197)
+        txtFirstName.Name = "txtFirstName"
+        txtFirstName.Size = New Size(314, 35)
+        txtFirstName.TabIndex = 8
+        ' 
+        ' txtLastName
+        ' 
+        txtLastName.Enabled = False
+        txtLastName.Location = New Point(328, 128)
+        txtLastName.Name = "txtLastName"
+        txtLastName.Size = New Size(314, 35)
+        txtLastName.TabIndex = 7
+        ' 
+        ' Label19
+        ' 
+        Label19.AutoSize = True
+        Label19.Font = New Font("Tahoma", 12F, FontStyle.Bold)
+        Label19.Location = New Point(719, 334)
+        Label19.Name = "Label19"
+        Label19.Size = New Size(218, 29)
+        Label19.TabIndex = 6
+        Label19.Text = "Contact Number:"
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoSize = True
+        Label18.Font = New Font("Tahoma", 12F, FontStyle.Bold)
+        Label18.Location = New Point(849, 261)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(88, 29)
+        Label18.TabIndex = 5
+        Label18.Text = "Email:"
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.Font = New Font("Tahoma", 12F, FontStyle.Bold)
+        Label17.Location = New Point(763, 199)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(174, 29)
+        Label17.TabIndex = 4
+        Label17.Text = "Date of Birth:"
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.Font = New Font("Tahoma", 12F, FontStyle.Bold)
+        Label16.Location = New Point(829, 126)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(108, 29)
+        Label16.TabIndex = 3
+        Label16.Text = "Gender:"
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.Font = New Font("Tahoma", 12F, FontStyle.Bold)
+        Label15.Location = New Point(134, 276)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(178, 29)
+        Label15.TabIndex = 2
+        Label15.Text = "Middle Name:"
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Font = New Font("Tahoma", 12F, FontStyle.Bold)
+        Label14.Location = New Point(160, 199)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(152, 29)
+        Label14.TabIndex = 1
+        Label14.Text = "First Name:"
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Font = New Font("Tahoma", 12F, FontStyle.Bold)
+        Label13.Location = New Point(163, 133)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(149, 29)
+        Label13.TabIndex = 0
+        Label13.Text = "Last Name:"
+        ' 
+        ' Panel3
+        ' 
+        Panel3.BackColor = Color.Firebrick
+        Panel3.BorderStyle = BorderStyle.Fixed3D
+        Panel3.Controls.Add(Label12)
+        Panel3.ForeColor = Color.White
+        Panel3.Location = New Point(17, 19)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(1465, 91)
+        Panel3.TabIndex = 0
+        ' 
+        ' Label12
+        ' 
+        Label12.Font = New Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label12.Image = My.Resources.Resources.icons8_info_22
+        Label12.ImageAlign = ContentAlignment.MiddleLeft
+        Label12.Location = New Point(24, 18)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(389, 43)
+        Label12.TabIndex = 0
+        Label12.Text = "    Basic Information"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Tahoma", 16F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(26, 12)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(257, 39)
+        Label1.TabIndex = 0
+        Label1.Text = "Student Profile"
+        ' 
+        ' txtStudentNum
+        ' 
+        txtStudentNum.Enabled = False
+        txtStudentNum.Location = New Point(328, 62)
+        txtStudentNum.Name = "txtStudentNum"
+        txtStudentNum.Size = New Size(314, 35)
+        txtStudentNum.TabIndex = 13
+        ' 
+        ' Label20
+        ' 
+        Label20.AutoSize = True
+        Label20.Font = New Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label20.Location = New Point(93, 64)
+        Label20.Name = "Label20"
+        Label20.Size = New Size(219, 29)
+        Label20.TabIndex = 14
+        Label20.Text = "Student Number:"
+        ' 
+        ' Label21
+        ' 
+        Label21.AutoSize = True
+        Label21.Font = New Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label21.Location = New Point(833, 64)
+        Label21.Name = "Label21"
+        Label21.Size = New Size(104, 29)
+        Label21.TabIndex = 15
+        Label21.Text = "Course:"
+        ' 
+        ' txtCourse
+        ' 
+        txtCourse.Enabled = False
+        txtCourse.Location = New Point(943, 58)
+        txtCourse.Name = "txtCourse"
+        txtCourse.Size = New Size(314, 35)
+        txtCourse.TabIndex = 16
+        ' 
         ' layout
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
@@ -459,15 +503,15 @@ Partial Class layout
         Text = "layout"
         pnlProfile.ResumeLayout(False)
         pnlProfile.PerformLayout()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         tabAboutMe.ResumeLayout(False)
         tab1.ResumeLayout(False)
         Panel4.ResumeLayout(False)
         Panel4.PerformLayout()
         Panel3.ResumeLayout(False)
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -499,11 +543,15 @@ Partial Class layout
     Friend WithEvents Label17 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtContactNumber As TextBox
+    Friend WithEvents txtEmail As TextBox
+    Friend WithEvents txtDateOfBirth As TextBox
+    Friend WithEvents txtGender As TextBox
+    Friend WithEvents txtMiddleName As TextBox
+    Friend WithEvents txtFirstName As TextBox
+    Friend WithEvents txtLastName As TextBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents txtStudentNum As TextBox
+    Friend WithEvents txtCourse As TextBox
+    Friend WithEvents Label21 As Label
 End Class
