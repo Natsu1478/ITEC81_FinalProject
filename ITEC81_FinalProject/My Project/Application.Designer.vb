@@ -33,7 +33,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.ITEC81_FinalProject.SignUpForm
+            Me.MainForm = Global.ITEC81_FinalProject.layout2
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
