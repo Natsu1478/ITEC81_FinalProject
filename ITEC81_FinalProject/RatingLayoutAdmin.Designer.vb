@@ -43,12 +43,12 @@ Partial Class RatingLayoutAdmin
         Panel2 = New Panel()
         tabActivity = New TabControl()
         tabStudentRatingsList = New TabPage()
-        Label1 = New Label()
         tabOverview = New TabPage()
-        Panel5 = New Panel()
-        Label13 = New Label()
         Panel6 = New Panel()
         ListView1 = New ListView()
+        Panel5 = New Panel()
+        Label13 = New Label()
+        Label1 = New Label()
         Panel4.SuspendLayout()
         Panel3.SuspendLayout()
         pnlProfile.SuspendLayout()
@@ -58,8 +58,8 @@ Partial Class RatingLayoutAdmin
         tabActivity.SuspendLayout()
         tabStudentRatingsList.SuspendLayout()
         tabOverview.SuspendLayout()
-        Panel5.SuspendLayout()
         Panel6.SuspendLayout()
+        Panel5.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel4
@@ -246,9 +246,9 @@ Partial Class RatingLayoutAdmin
         Label3.Font = New Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.Location = New Point(283, 104)
         Label3.Name = "Label3"
-        Label3.Size = New Size(510, 29)
+        Label3.Size = New Size(198, 29)
         Label3.TabIndex = 2
-        Label3.Text = "Bachelor of Science In Information Technology"
+        Label3.Text = "ADMINISTRATOR"
         ' 
         ' Label2
         ' 
@@ -315,16 +315,6 @@ Partial Class RatingLayoutAdmin
         tabStudentRatingsList.Text = "Ratings List"
         tabStudentRatingsList.UseVisualStyleBackColor = True
         ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Tahoma", 16F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(26, 12)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(138, 39)
-        Label1.TabIndex = 0
-        Label1.Text = "Ratings"
-        ' 
         ' tabOverview
         ' 
         tabOverview.Controls.Add(Panel6)
@@ -335,6 +325,23 @@ Partial Class RatingLayoutAdmin
         tabOverview.TabIndex = 1
         tabOverview.Text = "Overview"
         tabOverview.UseVisualStyleBackColor = True
+        ' 
+        ' Panel6
+        ' 
+        Panel6.BorderStyle = BorderStyle.Fixed3D
+        Panel6.Controls.Add(ListView1)
+        Panel6.Location = New Point(18, 133)
+        Panel6.Name = "Panel6"
+        Panel6.Size = New Size(1465, 411)
+        Panel6.TabIndex = 2
+        ' 
+        ' ListView1
+        ' 
+        ListView1.Location = New Point(-2, -2)
+        ListView1.Name = "ListView1"
+        ListView1.Size = New Size(1465, 406)
+        ListView1.TabIndex = 19
+        ListView1.UseCompatibleStateImageBehavior = False
         ' 
         ' Panel5
         ' 
@@ -357,22 +364,16 @@ Partial Class RatingLayoutAdmin
         Label13.TabIndex = 0
         Label13.Text = "   Overview"
         ' 
-        ' Panel6
+        ' Label1
         ' 
-        Panel6.BorderStyle = BorderStyle.Fixed3D
-        Panel6.Controls.Add(ListView1)
-        Panel6.Location = New Point(18, 133)
-        Panel6.Name = "Panel6"
-        Panel6.Size = New Size(1465, 411)
-        Panel6.TabIndex = 2
-        ' 
-        ' ListView1
-        ' 
-        ListView1.Location = New Point(-2, -2)
-        ListView1.Name = "ListView1"
-        ListView1.Size = New Size(1465, 406)
-        ListView1.TabIndex = 19
-        ListView1.UseCompatibleStateImageBehavior = False
+        Label1.AutoSize = True
+        Label1.Font = New Font("Tahoma", 16F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.Maroon
+        Label1.Location = New Point(26, 12)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(138, 39)
+        Label1.TabIndex = 0
+        Label1.Text = "Ratings"
         ' 
         ' RatingLayoutAdmin
         ' 
@@ -393,8 +394,8 @@ Partial Class RatingLayoutAdmin
         tabActivity.ResumeLayout(False)
         tabStudentRatingsList.ResumeLayout(False)
         tabOverview.ResumeLayout(False)
-        Panel5.ResumeLayout(False)
         Panel6.ResumeLayout(False)
+        Panel5.ResumeLayout(False)
         ResumeLayout(False)
         PerformLayout()
     End Sub

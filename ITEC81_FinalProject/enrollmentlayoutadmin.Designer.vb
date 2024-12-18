@@ -23,7 +23,7 @@ Partial Class enrollmentlayoutadmin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panel5 = New Panel()
-        ComboBox1 = New ComboBox()
+        cbxStatus = New ComboBox()
         TextBox3 = New TextBox()
         TextBox1 = New TextBox()
         Label13 = New Label()
@@ -47,6 +47,7 @@ Partial Class enrollmentlayoutadmin
         Label12 = New Label()
         tabEnrollmentList = New TabPage()
         Panel4 = New Panel()
+        lstEnrollmentList = New ListView()
         Label1 = New Label()
         pnlProfile = New Panel()
         Panel1 = New Panel()
@@ -64,7 +65,6 @@ Partial Class enrollmentlayoutadmin
         Panel2 = New Panel()
         tabEnrollment = New TabControl()
         tabManageEnrollees = New TabPage()
-        lstEnrollmentList = New ListView()
         Panel5.SuspendLayout()
         Panel6.SuspendLayout()
         Panel3.SuspendLayout()
@@ -81,7 +81,7 @@ Partial Class enrollmentlayoutadmin
         ' Panel5
         ' 
         Panel5.BorderStyle = BorderStyle.Fixed3D
-        Panel5.Controls.Add(ComboBox1)
+        Panel5.Controls.Add(cbxStatus)
         Panel5.Controls.Add(TextBox3)
         Panel5.Controls.Add(TextBox1)
         Panel5.Controls.Add(Label13)
@@ -104,16 +104,16 @@ Partial Class enrollmentlayoutadmin
         Panel5.Size = New Size(1465, 411)
         Panel5.TabIndex = 3
         ' 
-        ' ComboBox1
+        ' cbxStatus
         ' 
-        ComboBox1.Enabled = False
-        ComboBox1.Font = New Font("Tahoma", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"Active", "Completed", "Withdrawn"})
-        ComboBox1.Location = New Point(954, 247)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(428, 32)
-        ComboBox1.TabIndex = 39
+        cbxStatus.Enabled = False
+        cbxStatus.Font = New Font("Tahoma", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        cbxStatus.FormattingEnabled = True
+        cbxStatus.Items.AddRange(New Object() {"Active", "Completed", "Withdrawn"})
+        cbxStatus.Location = New Point(954, 247)
+        cbxStatus.Name = "cbxStatus"
+        cbxStatus.Size = New Size(428, 32)
+        cbxStatus.TabIndex = 39
         ' 
         ' TextBox3
         ' 
@@ -356,6 +356,14 @@ Partial Class enrollmentlayoutadmin
         Panel4.Size = New Size(1577, 411)
         Panel4.TabIndex = 1
         ' 
+        ' lstEnrollmentList
+        ' 
+        lstEnrollmentList.Location = New Point(1, 1)
+        lstEnrollmentList.Name = "lstEnrollmentList"
+        lstEnrollmentList.Size = New Size(1462, 403)
+        lstEnrollmentList.TabIndex = 0
+        lstEnrollmentList.UseCompatibleStateImageBehavior = False
+        ' 
         ' Label1
         ' 
         Label1.AutoSize = True
@@ -495,9 +503,9 @@ Partial Class enrollmentlayoutadmin
         Label3.Font = New Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.Location = New Point(283, 104)
         Label3.Name = "Label3"
-        Label3.Size = New Size(510, 29)
+        Label3.Size = New Size(198, 29)
         Label3.TabIndex = 2
-        Label3.Text = "Bachelor of Science In Information Technology"
+        Label3.Text = "ADMINISTRATOR"
         ' 
         ' Label2
         ' 
@@ -561,14 +569,6 @@ Partial Class enrollmentlayoutadmin
         tabManageEnrollees.TabIndex = 1
         tabManageEnrollees.Text = "Manage Enrollees"
         tabManageEnrollees.UseVisualStyleBackColor = True
-        ' 
-        ' lstEnrollmentList
-        ' 
-        lstEnrollmentList.Location = New Point(1, 1)
-        lstEnrollmentList.Name = "lstEnrollmentList"
-        lstEnrollmentList.Size = New Size(1462, 403)
-        lstEnrollmentList.TabIndex = 0
-        lstEnrollmentList.UseCompatibleStateImageBehavior = False
         ' 
         ' enrollmentlayoutadmin
         ' 
@@ -637,6 +637,6 @@ Partial Class enrollmentlayoutadmin
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cbxStatus As ComboBox
     Friend WithEvents lstEnrollmentList As ListView
 End Class

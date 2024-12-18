@@ -124,9 +124,9 @@ Partial Class ScheduleCalendarLayout
         ' 
         ' lslCalendarofActivities
         ' 
-        lslCalendarofActivities.Location = New Point(496, 23)
+        lslCalendarofActivities.Location = New Point(496, -2)
         lslCalendarofActivities.Name = "lslCalendarofActivities"
-        lslCalendarofActivities.Size = New Size(967, 386)
+        lslCalendarofActivities.Size = New Size(967, 411)
         lslCalendarofActivities.TabIndex = 0
         lslCalendarofActivities.UseCompatibleStateImageBehavior = False
         ' 
@@ -210,7 +210,7 @@ Partial Class ScheduleCalendarLayout
         tabCompletedActivities.Name = "tabCompletedActivities"
         tabCompletedActivities.Size = New Size(1498, 566)
         tabCompletedActivities.TabIndex = 2
-        tabCompletedActivities.Text = "CompletedActivities"
+        tabCompletedActivities.Text = "Completed Activities"
         tabCompletedActivities.UseVisualStyleBackColor = True
         ' 
         ' Panel7
@@ -418,9 +418,9 @@ Partial Class ScheduleCalendarLayout
         Label3.Font = New Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.Location = New Point(283, 104)
         Label3.Name = "Label3"
-        Label3.Size = New Size(510, 29)
+        Label3.Size = New Size(198, 29)
         Label3.TabIndex = 2
-        Label3.Text = "Bachelor of Science In Information Technology"
+        Label3.Text = "ADMINISTRATOR"
         ' 
         ' Label2
         ' 
