@@ -33,7 +33,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.ITEC81_FinalProject.LogInForm
+            Me.MainForm = Global.ITEC81_FinalProject.ScheduleCalendarLayout
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
