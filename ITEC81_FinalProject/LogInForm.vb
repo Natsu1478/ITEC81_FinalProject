@@ -69,28 +69,35 @@
 
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        Dim username As String = txtUsername.Text
-        Dim password As String = txtPassword.Text
-        Dim currUser As String = lblCurrUser.Text
 
-
-        If ValidateLogin(username, password, currUser) Then
-            MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
-            If currUser = "ADMIN" Then
-                Form_Admin.Name = username
-                Me.Hide()
-                Form_Admin.Show()
-
-            ElseIf currUser = "STUDENT" Then
-                Me.Hide()
-                'StudentForm.Show()
-            End If
-
+        If txtUsername.Text = "" Then
+            MessageBox.Show("Please input your Username.", "Log In Unsuccessful", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        ElseIf txtPassword.Text = "" Then
+            MessageBox.Show("Please input your Password.", "Log In Unsuccessful", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        ElseIf txtUsername.Text = "" And txtPassword.Text = "" Then
+            MessageBox.Show("Please Enter A Valid Username and Password.", "Log In Unsuccessful", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
-            MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
+            Dim username As String = txtUsername.Text
+            Dim password As String = txtPassword.Text
+            Dim currUser As String = lblCurrUser.Text
 
+            If ValidateLogin(username, password, currUser) Then
+                MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+                If currUser = "ADMIN" Then
+                    Form_Admin.Name = username
+                    Me.Hide()
+                    Form_Admin.Show()
+
+                ElseIf currUser = "STUDENT" Then
+                    Me.Hide()
+                    'StudentForm.Show()
+                End If
+
+            Else
+                MessageBox.Show("Invalid username or password!", "Log In Unsuccessful", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        End If
 
     End Sub
 
