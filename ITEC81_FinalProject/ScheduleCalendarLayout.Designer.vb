@@ -26,7 +26,7 @@ Partial Class ScheduleCalendarLayout
         tabCalendarofActivities = New TabPage()
         Panel4 = New Panel()
         MonthCalendar1 = New MonthCalendar()
-        ListView1 = New ListView()
+        lslCalendarofActivities = New ListView()
         Panel3 = New Panel()
         Label12 = New Label()
         tabOngoingActivities = New TabPage()
@@ -35,7 +35,15 @@ Partial Class ScheduleCalendarLayout
         Panel6 = New Panel()
         Label27 = New Label()
         tabCompletedActivities = New TabPage()
+        Panel7 = New Panel()
+        lstCompletedActivities = New ListView()
+        Panel8 = New Panel()
+        Label13 = New Label()
         tabUpcomingActivities = New TabPage()
+        Panel9 = New Panel()
+        lstUpcomingActivities = New ListView()
+        Panel10 = New Panel()
+        Label14 = New Label()
         Panel1 = New Panel()
         Label11 = New Label()
         Label10 = New Label()
@@ -51,14 +59,6 @@ Partial Class ScheduleCalendarLayout
         Label1 = New Label()
         Panel2 = New Panel()
         pnlProfile = New Panel()
-        Panel7 = New Panel()
-        lstCompletedActivities = New ListView()
-        Panel8 = New Panel()
-        Label13 = New Label()
-        Panel9 = New Panel()
-        ListView2 = New ListView()
-        Panel10 = New Panel()
-        Label14 = New Label()
         tabSchedule.SuspendLayout()
         tabCalendarofActivities.SuspendLayout()
         Panel4.SuspendLayout()
@@ -67,15 +67,15 @@ Partial Class ScheduleCalendarLayout
         Panel5.SuspendLayout()
         Panel6.SuspendLayout()
         tabCompletedActivities.SuspendLayout()
+        Panel7.SuspendLayout()
+        Panel8.SuspendLayout()
         tabUpcomingActivities.SuspendLayout()
+        Panel9.SuspendLayout()
+        Panel10.SuspendLayout()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
         pnlProfile.SuspendLayout()
-        Panel7.SuspendLayout()
-        Panel8.SuspendLayout()
-        Panel9.SuspendLayout()
-        Panel10.SuspendLayout()
         SuspendLayout()
         ' 
         ' tabSchedule
@@ -109,7 +109,7 @@ Partial Class ScheduleCalendarLayout
         ' 
         Panel4.BorderStyle = BorderStyle.Fixed3D
         Panel4.Controls.Add(MonthCalendar1)
-        Panel4.Controls.Add(ListView1)
+        Panel4.Controls.Add(lslCalendarofActivities)
         Panel4.Location = New Point(17, 133)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(1577, 411)
@@ -122,13 +122,13 @@ Partial Class ScheduleCalendarLayout
         MonthCalendar1.Name = "MonthCalendar1"
         MonthCalendar1.TabIndex = 1
         ' 
-        ' ListView1
+        ' lslCalendarofActivities
         ' 
-        ListView1.Location = New Point(496, 23)
-        ListView1.Name = "ListView1"
-        ListView1.Size = New Size(967, 386)
-        ListView1.TabIndex = 0
-        ListView1.UseCompatibleStateImageBehavior = False
+        lslCalendarofActivities.Location = New Point(496, 23)
+        lslCalendarofActivities.Name = "lslCalendarofActivities"
+        lslCalendarofActivities.Size = New Size(967, 386)
+        lslCalendarofActivities.TabIndex = 0
+        lslCalendarofActivities.UseCompatibleStateImageBehavior = False
         ' 
         ' Panel3
         ' 
@@ -213,6 +213,45 @@ Partial Class ScheduleCalendarLayout
         tabCompletedActivities.Text = "CompletedActivities"
         tabCompletedActivities.UseVisualStyleBackColor = True
         ' 
+        ' Panel7
+        ' 
+        Panel7.BorderStyle = BorderStyle.Fixed3D
+        Panel7.Controls.Add(lstCompletedActivities)
+        Panel7.Location = New Point(17, 135)
+        Panel7.Name = "Panel7"
+        Panel7.Size = New Size(1465, 411)
+        Panel7.TabIndex = 5
+        ' 
+        ' lstCompletedActivities
+        ' 
+        lstCompletedActivities.Location = New Point(0, -2)
+        lstCompletedActivities.Name = "lstCompletedActivities"
+        lstCompletedActivities.Size = New Size(1458, 411)
+        lstCompletedActivities.TabIndex = 0
+        lstCompletedActivities.UseCompatibleStateImageBehavior = False
+        ' 
+        ' Panel8
+        ' 
+        Panel8.BackColor = Color.Firebrick
+        Panel8.BorderStyle = BorderStyle.Fixed3D
+        Panel8.Controls.Add(Label13)
+        Panel8.ForeColor = Color.White
+        Panel8.Location = New Point(17, 21)
+        Panel8.Name = "Panel8"
+        Panel8.Size = New Size(1465, 91)
+        Panel8.TabIndex = 4
+        ' 
+        ' Label13
+        ' 
+        Label13.Font = New Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label13.Image = My.Resources.Resources.icons8_info_22
+        Label13.ImageAlign = ContentAlignment.MiddleLeft
+        Label13.Location = New Point(24, 18)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(532, 43)
+        Label13.TabIndex = 0
+        Label13.Text = "   Completed Activities"
+        ' 
         ' tabUpcomingActivities
         ' 
         tabUpcomingActivities.Controls.Add(Panel9)
@@ -223,6 +262,45 @@ Partial Class ScheduleCalendarLayout
         tabUpcomingActivities.TabIndex = 3
         tabUpcomingActivities.Text = "Upcoming Activities"
         tabUpcomingActivities.UseVisualStyleBackColor = True
+        ' 
+        ' Panel9
+        ' 
+        Panel9.BorderStyle = BorderStyle.Fixed3D
+        Panel9.Controls.Add(lstUpcomingActivities)
+        Panel9.Location = New Point(17, 135)
+        Panel9.Name = "Panel9"
+        Panel9.Size = New Size(1465, 411)
+        Panel9.TabIndex = 5
+        ' 
+        ' lstUpcomingActivities
+        ' 
+        lstUpcomingActivities.Location = New Point(0, -2)
+        lstUpcomingActivities.Name = "lstUpcomingActivities"
+        lstUpcomingActivities.Size = New Size(1458, 411)
+        lstUpcomingActivities.TabIndex = 0
+        lstUpcomingActivities.UseCompatibleStateImageBehavior = False
+        ' 
+        ' Panel10
+        ' 
+        Panel10.BackColor = Color.Firebrick
+        Panel10.BorderStyle = BorderStyle.Fixed3D
+        Panel10.Controls.Add(Label14)
+        Panel10.ForeColor = Color.White
+        Panel10.Location = New Point(17, 21)
+        Panel10.Name = "Panel10"
+        Panel10.Size = New Size(1465, 91)
+        Panel10.TabIndex = 4
+        ' 
+        ' Label14
+        ' 
+        Label14.Font = New Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label14.Image = My.Resources.Resources.icons8_info_22
+        Label14.ImageAlign = ContentAlignment.MiddleLeft
+        Label14.Location = New Point(24, 18)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(532, 43)
+        Label14.TabIndex = 0
+        Label14.Text = "   Upcoming Activities"
         ' 
         ' Panel1
         ' 
@@ -407,84 +485,6 @@ Partial Class ScheduleCalendarLayout
         pnlProfile.Size = New Size(1564, 959)
         pnlProfile.TabIndex = 3
         ' 
-        ' Panel7
-        ' 
-        Panel7.BorderStyle = BorderStyle.Fixed3D
-        Panel7.Controls.Add(lstCompletedActivities)
-        Panel7.Location = New Point(17, 135)
-        Panel7.Name = "Panel7"
-        Panel7.Size = New Size(1465, 411)
-        Panel7.TabIndex = 5
-        ' 
-        ' lstCompletedActivities
-        ' 
-        lstCompletedActivities.Location = New Point(0, -2)
-        lstCompletedActivities.Name = "lstCompletedActivities"
-        lstCompletedActivities.Size = New Size(1458, 411)
-        lstCompletedActivities.TabIndex = 0
-        lstCompletedActivities.UseCompatibleStateImageBehavior = False
-        ' 
-        ' Panel8
-        ' 
-        Panel8.BackColor = Color.Firebrick
-        Panel8.BorderStyle = BorderStyle.Fixed3D
-        Panel8.Controls.Add(Label13)
-        Panel8.ForeColor = Color.White
-        Panel8.Location = New Point(17, 21)
-        Panel8.Name = "Panel8"
-        Panel8.Size = New Size(1465, 91)
-        Panel8.TabIndex = 4
-        ' 
-        ' Label13
-        ' 
-        Label13.Font = New Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label13.Image = My.Resources.Resources.icons8_info_22
-        Label13.ImageAlign = ContentAlignment.MiddleLeft
-        Label13.Location = New Point(24, 18)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(532, 43)
-        Label13.TabIndex = 0
-        Label13.Text = "   Completed Activities"
-        ' 
-        ' Panel9
-        ' 
-        Panel9.BorderStyle = BorderStyle.Fixed3D
-        Panel9.Controls.Add(ListView2)
-        Panel9.Location = New Point(17, 135)
-        Panel9.Name = "Panel9"
-        Panel9.Size = New Size(1465, 411)
-        Panel9.TabIndex = 5
-        ' 
-        ' ListView2
-        ' 
-        ListView2.Location = New Point(0, -2)
-        ListView2.Name = "ListView2"
-        ListView2.Size = New Size(1458, 411)
-        ListView2.TabIndex = 0
-        ListView2.UseCompatibleStateImageBehavior = False
-        ' 
-        ' Panel10
-        ' 
-        Panel10.BackColor = Color.Firebrick
-        Panel10.BorderStyle = BorderStyle.Fixed3D
-        Panel10.Controls.Add(Label14)
-        Panel10.ForeColor = Color.White
-        Panel10.Location = New Point(17, 21)
-        Panel10.Name = "Panel10"
-        Panel10.Size = New Size(1465, 91)
-        Panel10.TabIndex = 4
-        ' 
-        ' Label14
-        ' 
-        Label14.Font = New Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label14.Image = My.Resources.Resources.icons8_info_22
-        Label14.ImageAlign = ContentAlignment.MiddleLeft
-        Label14.Location = New Point(24, 18)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(532, 43)
-        Label14.TabIndex = 0
-        Label14.Text = "   Upcoming Activities"
-        ' 
         ' ScheduleCalendarLayout
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
@@ -501,17 +501,17 @@ Partial Class ScheduleCalendarLayout
         Panel5.ResumeLayout(False)
         Panel6.ResumeLayout(False)
         tabCompletedActivities.ResumeLayout(False)
+        Panel7.ResumeLayout(False)
+        Panel8.ResumeLayout(False)
         tabUpcomingActivities.ResumeLayout(False)
+        Panel9.ResumeLayout(False)
+        Panel10.ResumeLayout(False)
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         pnlProfile.ResumeLayout(False)
         pnlProfile.PerformLayout()
-        Panel7.ResumeLayout(False)
-        Panel8.ResumeLayout(False)
-        Panel9.ResumeLayout(False)
-        Panel10.ResumeLayout(False)
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -542,7 +542,7 @@ Partial Class ScheduleCalendarLayout
     Friend WithEvents pnlProfile As Panel
     Friend WithEvents tabCompletedActivities As TabPage
     Friend WithEvents tabUpcomingActivities As TabPage
-    Friend WithEvents ListView1 As ListView
+    Friend WithEvents lslCalendarofActivities As ListView
     Friend WithEvents MonthCalendar1 As MonthCalendar
     Friend WithEvents lstOngoingActivities As ListView
     Friend WithEvents Panel7 As Panel
@@ -550,7 +550,7 @@ Partial Class ScheduleCalendarLayout
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Label13 As Label
     Friend WithEvents Panel9 As Panel
-    Friend WithEvents ListView2 As ListView
+    Friend WithEvents lstUpcomingActivities As ListView
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Label14 As Label
 End Class

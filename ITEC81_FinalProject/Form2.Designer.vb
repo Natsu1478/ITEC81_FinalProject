@@ -25,7 +25,6 @@ Partial Class Form2
         Label1 = New Label()
         Label12 = New Label()
         Panel4 = New Panel()
-        lstActivityList = New ListBox()
         btnAddNewActivity = New Button()
         pnlProfile = New Panel()
         Panel1 = New Panel()
@@ -63,6 +62,7 @@ Partial Class Form2
         txtDescription = New TextBox()
         Panel6 = New Panel()
         Label27 = New Label()
+        lstActivityList = New ListView()
         Panel4.SuspendLayout()
         pnlProfile.SuspendLayout()
         Panel1.SuspendLayout()
@@ -88,7 +88,7 @@ Partial Class Form2
         ' 
         ' Label12
         ' 
-        Label12.Font = New Font("Tahoma", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label12.Font = New Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label12.ImageAlign = ContentAlignment.MiddleLeft
         Label12.Location = New Point(24, 18)
         Label12.Name = "Label12"
@@ -105,16 +105,6 @@ Partial Class Form2
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(1577, 411)
         Panel4.TabIndex = 1
-        ' 
-        ' lstActivityList
-        ' 
-        lstActivityList.Font = New Font("Franklin Gothic Book", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lstActivityList.FormattingEnabled = True
-        lstActivityList.ItemHeight = 25
-        lstActivityList.Location = New Point(-5, -2)
-        lstActivityList.Name = "lstActivityList"
-        lstActivityList.Size = New Size(1481, 329)
-        lstActivityList.TabIndex = 19
         ' 
         ' btnAddNewActivity
         ' 
@@ -549,13 +539,21 @@ Partial Class Form2
         ' 
         ' Label27
         ' 
-        Label27.Font = New Font("Tahoma", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label27.Font = New Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label27.ImageAlign = ContentAlignment.MiddleLeft
         Label27.Location = New Point(24, 18)
         Label27.Name = "Label27"
         Label27.Size = New Size(532, 43)
         Label27.TabIndex = 0
         Label27.Text = "   Create/Modify/Delete Activity"
+        ' 
+        ' lstActivityList
+        ' 
+        lstActivityList.Location = New Point(-2, -2)
+        lstActivityList.Name = "lstActivityList"
+        lstActivityList.Size = New Size(1465, 335)
+        lstActivityList.TabIndex = 19
+        lstActivityList.UseCompatibleStateImageBehavior = False
         ' 
         ' Form2
         ' 
@@ -612,7 +610,6 @@ Partial Class Form2
     Friend WithEvents Label27 As Label
     Friend WithEvents btnAddNewActivity As Button
     Friend WithEvents btnEditActivity As Button
-    Friend WithEvents lstActivityList As ListBox
     Friend WithEvents btnDeleteActivity As Button
     Friend WithEvents txtActivityName As TextBox
     Friend WithEvents Label23 As Label
@@ -627,4 +624,5 @@ Partial Class Form2
     Friend WithEvents Label16 As Label
     Friend WithEvents txtActivityType As TextBox
     Friend WithEvents txtDescription As TextBox
+    Friend WithEvents lstActivityList As ListView
 End Class

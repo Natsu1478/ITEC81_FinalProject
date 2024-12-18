@@ -47,7 +47,6 @@ Partial Class enrollmentlayoutadmin
         Label12 = New Label()
         tabEnrollmentList = New TabPage()
         Panel4 = New Panel()
-        lstEnrollmentList = New ListBox()
         Label1 = New Label()
         pnlProfile = New Panel()
         Panel1 = New Panel()
@@ -65,6 +64,7 @@ Partial Class enrollmentlayoutadmin
         Panel2 = New Panel()
         tabEnrollment = New TabControl()
         tabManageEnrollees = New TabPage()
+        lstEnrollmentList = New ListView()
         Panel5.SuspendLayout()
         Panel6.SuspendLayout()
         Panel3.SuspendLayout()
@@ -327,7 +327,6 @@ Partial Class enrollmentlayoutadmin
         ' Label12
         ' 
         Label12.Font = New Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.Image = My.Resources.Resources.icons8_list_25__1_
         Label12.ImageAlign = ContentAlignment.MiddleLeft
         Label12.Location = New Point(24, 18)
         Label12.Name = "Label12"
@@ -356,16 +355,6 @@ Partial Class enrollmentlayoutadmin
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(1577, 411)
         Panel4.TabIndex = 1
-        ' 
-        ' lstEnrollmentList
-        ' 
-        lstEnrollmentList.Font = New Font("Franklin Gothic Book", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lstEnrollmentList.FormattingEnabled = True
-        lstEnrollmentList.ItemHeight = 25
-        lstEnrollmentList.Location = New Point(-5, -2)
-        lstEnrollmentList.Name = "lstEnrollmentList"
-        lstEnrollmentList.Size = New Size(1481, 429)
-        lstEnrollmentList.TabIndex = 19
         ' 
         ' Label1
         ' 
@@ -573,6 +562,14 @@ Partial Class enrollmentlayoutadmin
         tabManageEnrollees.Text = "Manage Enrollees"
         tabManageEnrollees.UseVisualStyleBackColor = True
         ' 
+        ' lstEnrollmentList
+        ' 
+        lstEnrollmentList.Location = New Point(1, 1)
+        lstEnrollmentList.Name = "lstEnrollmentList"
+        lstEnrollmentList.Size = New Size(1462, 403)
+        lstEnrollmentList.TabIndex = 0
+        lstEnrollmentList.UseCompatibleStateImageBehavior = False
+        ' 
         ' enrollmentlayoutadmin
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
@@ -618,7 +615,6 @@ Partial Class enrollmentlayoutadmin
     Friend WithEvents Label12 As Label
     Friend WithEvents tabEnrollmentList As TabPage
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents lstEnrollmentList As ListBox
     Friend WithEvents btnChangeStatus As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents pnlProfile As Panel
@@ -642,4 +638,5 @@ Partial Class enrollmentlayoutadmin
     Friend WithEvents Label14 As Label
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents lstEnrollmentList As ListView
 End Class
