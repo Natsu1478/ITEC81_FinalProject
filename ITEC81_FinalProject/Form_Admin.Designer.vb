@@ -22,34 +22,33 @@ Partial Class Form_Admin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Admin))
         Panel1 = New Panel()
         pnlMAIN = New Panel()
         pnlProfile = New Panel()
         Panel11 = New Panel()
-        Label33 = New Label()
-        Label34 = New Label()
+        lblContact = New Label()
+        lblDept = New Label()
         Label35 = New Label()
-        Label36 = New Label()
+        lblEmail = New Label()
         Label37 = New Label()
         Label38 = New Label()
         Label39 = New Label()
         Label40 = New Label()
-        Label41 = New Label()
+        lblFullName = New Label()
         PictureBox4 = New PictureBox()
         Label42 = New Label()
         Panel9 = New Panel()
         tabAboutMe = New TabControl()
         tab1 = New TabPage()
         Panel8 = New Panel()
-        TextBox7 = New TextBox()
-        TextBox6 = New TextBox()
-        TextBox5 = New TextBox()
-        TextBox4 = New TextBox()
-        TextBox3 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox1 = New TextBox()
+        txtContactNumber = New TextBox()
+        txtEmail = New TextBox()
+        txtDateOfBirth = New TextBox()
+        txtGender = New TextBox()
+        txtMiddleName = New TextBox()
+        txtFirstName = New TextBox()
+        txtLastName = New TextBox()
         Label20 = New Label()
         Label21 = New Label()
         Label22 = New Label()
@@ -92,7 +91,6 @@ Partial Class Form_Admin
         Panel3 = New Panel()
         Label3 = New Label()
         PictureBox1 = New PictureBox()
-        AnimationTimer1 = New Timer(components)
         Panel1.SuspendLayout()
         pnlMAIN.SuspendLayout()
         pnlProfile.SuspendLayout()
@@ -130,7 +128,7 @@ Partial Class Form_Admin
         ' 
         pnlMAIN.Controls.Add(pnlProfile)
         pnlMAIN.Location = New Point(286, 60)
-        pnlMAIN.Margin = New Padding(2, 2, 2, 2)
+        pnlMAIN.Margin = New Padding(2)
         pnlMAIN.Name = "pnlMAIN"
         pnlMAIN.Size = New Size(1259, 766)
         pnlMAIN.TabIndex = 11
@@ -152,50 +150,50 @@ Partial Class Form_Admin
         Panel11.AutoSize = True
         Panel11.BackColor = Color.Gainsboro
         Panel11.BorderStyle = BorderStyle.Fixed3D
-        Panel11.Controls.Add(Label33)
-        Panel11.Controls.Add(Label34)
+        Panel11.Controls.Add(lblContact)
+        Panel11.Controls.Add(lblDept)
         Panel11.Controls.Add(Label35)
-        Panel11.Controls.Add(Label36)
+        Panel11.Controls.Add(lblEmail)
         Panel11.Controls.Add(Label37)
         Panel11.Controls.Add(Label38)
         Panel11.Controls.Add(Label39)
         Panel11.Controls.Add(Label40)
-        Panel11.Controls.Add(Label41)
+        Panel11.Controls.Add(lblFullName)
         Panel11.Controls.Add(PictureBox4)
         Panel11.Controls.Add(Label42)
         Panel11.Location = New Point(23, 46)
-        Panel11.Margin = New Padding(2, 2, 2, 2)
+        Panel11.Margin = New Padding(2)
         Panel11.Name = "Panel11"
         Panel11.Size = New Size(1210, 194)
         Panel11.TabIndex = 2
         ' 
-        ' Label33
+        ' lblContact
         ' 
-        Label33.AutoEllipsis = True
-        Label33.AutoSize = True
-        Label33.Font = New Font("Tahoma", 11F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label33.ImageAlign = ContentAlignment.MiddleLeft
-        Label33.Location = New Point(798, 154)
-        Label33.Margin = New Padding(2, 0, 2, 0)
-        Label33.Name = "Label33"
-        Label33.RightToLeft = RightToLeft.No
-        Label33.Size = New Size(120, 23)
-        Label33.TabIndex = 10
-        Label33.Text = "09123456789"
+        lblContact.AutoEllipsis = True
+        lblContact.AutoSize = True
+        lblContact.Font = New Font("Tahoma", 11F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblContact.ImageAlign = ContentAlignment.MiddleLeft
+        lblContact.Location = New Point(798, 154)
+        lblContact.Margin = New Padding(2, 0, 2, 0)
+        lblContact.Name = "lblContact"
+        lblContact.RightToLeft = RightToLeft.No
+        lblContact.Size = New Size(120, 23)
+        lblContact.TabIndex = 10
+        lblContact.Text = "09123456789"
         ' 
-        ' Label34
+        ' lblDept
         ' 
-        Label34.AutoEllipsis = True
-        Label34.AutoSize = True
-        Label34.Font = New Font("Tahoma", 11F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label34.ImageAlign = ContentAlignment.MiddleLeft
-        Label34.Location = New Point(798, 42)
-        Label34.Margin = New Padding(2, 0, 2, 0)
-        Label34.Name = "Label34"
-        Label34.RightToLeft = RightToLeft.No
-        Label34.Size = New Size(245, 23)
-        Label34.TabIndex = 9
-        Label34.Text = "School Of Computer Studies"
+        lblDept.AutoEllipsis = True
+        lblDept.AutoSize = True
+        lblDept.Font = New Font("Tahoma", 11F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblDept.ImageAlign = ContentAlignment.MiddleLeft
+        lblDept.Location = New Point(798, 42)
+        lblDept.Margin = New Padding(2, 0, 2, 0)
+        lblDept.Name = "lblDept"
+        lblDept.RightToLeft = RightToLeft.No
+        lblDept.Size = New Size(245, 23)
+        lblDept.TabIndex = 9
+        lblDept.Text = "School Of Computer Studies"
         ' 
         ' Label35
         ' 
@@ -209,19 +207,19 @@ Partial Class Form_Admin
         Label35.Size = New Size(0, 23)
         Label35.TabIndex = 8
         ' 
-        ' Label36
+        ' lblEmail
         ' 
-        Label36.AutoEllipsis = True
-        Label36.AutoSize = True
-        Label36.Font = New Font("Tahoma", 11F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label36.ImageAlign = ContentAlignment.MiddleLeft
-        Label36.Location = New Point(798, 97)
-        Label36.Margin = New Padding(2, 0, 2, 0)
-        Label36.Name = "Label36"
-        Label36.RightToLeft = RightToLeft.No
-        Label36.Size = New Size(360, 23)
-        Label36.TabIndex = 7
-        Label36.Text = "glevenn@citycollegeoftagaytaycity.edu.ph"
+        lblEmail.AutoEllipsis = True
+        lblEmail.AutoSize = True
+        lblEmail.Font = New Font("Tahoma", 11F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblEmail.ImageAlign = ContentAlignment.MiddleLeft
+        lblEmail.Location = New Point(798, 97)
+        lblEmail.Margin = New Padding(2, 0, 2, 0)
+        lblEmail.Name = "lblEmail"
+        lblEmail.RightToLeft = RightToLeft.No
+        lblEmail.Size = New Size(360, 23)
+        lblEmail.TabIndex = 7
+        lblEmail.Text = "glevenn@citycollegeoftagaytaycity.edu.ph"
         ' 
         ' Label37
         ' 
@@ -233,7 +231,7 @@ Partial Class Form_Admin
         Label37.Margin = New Padding(2, 0, 2, 0)
         Label37.Name = "Label37"
         Label37.RightToLeft = RightToLeft.No
-        Label37.Size = New Size(190, 22)
+        Label37.Size = New Size(251, 22)
         Label37.TabIndex = 6
         Label37.Text = "     Contact Number: "
         ' 
@@ -247,7 +245,7 @@ Partial Class Form_Admin
         Label38.Margin = New Padding(2, 0, 2, 0)
         Label38.Name = "Label38"
         Label38.RightToLeft = RightToLeft.No
-        Label38.Size = New Size(170, 22)
+        Label38.Size = New Size(273, 22)
         Label38.TabIndex = 5
         Label38.Text = "     Email Address: "
         ' 
@@ -261,7 +259,7 @@ Partial Class Form_Admin
         Label39.Margin = New Padding(2, 0, 2, 0)
         Label39.Name = "Label39"
         Label39.RightToLeft = RightToLeft.No
-        Label39.Size = New Size(151, 22)
+        Label39.Size = New Size(190, 22)
         Label39.TabIndex = 4
         Label39.Text = "     Department: "
         ' 
@@ -269,29 +267,29 @@ Partial Class Form_Admin
         ' 
         Label40.AutoSize = True
         Label40.Font = New Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label40.Location = New Point(226, 83)
+        Label40.Location = New Point(240, 106)
         Label40.Margin = New Padding(2, 0, 2, 0)
         Label40.Name = "Label40"
-        Label40.Size = New Size(425, 24)
+        Label40.Size = New Size(163, 24)
         Label40.TabIndex = 2
-        Label40.Text = "Bachelor of Science In Information Technology"
+        Label40.Text = "ADMINISTRATOR"
         ' 
-        ' Label41
+        ' lblFullName
         ' 
-        Label41.AutoSize = True
-        Label41.Font = New Font("Tahoma", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label41.Location = New Point(226, 30)
-        Label41.Margin = New Padding(2, 0, 2, 0)
-        Label41.Name = "Label41"
-        Label41.Size = New Size(308, 41)
-        Label41.TabIndex = 1
-        Label41.Text = "Alba, Glerisse Venn"
+        lblFullName.AutoSize = True
+        lblFullName.Font = New Font("Tahoma", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblFullName.Location = New Point(226, 55)
+        lblFullName.Margin = New Padding(2, 0, 2, 0)
+        lblFullName.Name = "lblFullName"
+        lblFullName.Size = New Size(308, 41)
+        lblFullName.TabIndex = 1
+        lblFullName.Text = "Alba, Glerisse Venn"
         ' 
         ' PictureBox4
         ' 
         PictureBox4.Image = My.Resources.Resources.icons8_avatar_96
         PictureBox4.Location = New Point(28, 15)
-        PictureBox4.Margin = New Padding(2, 2, 2, 2)
+        PictureBox4.Margin = New Padding(2)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(160, 160)
         PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
@@ -304,7 +302,7 @@ Partial Class Form_Admin
         Label42.BackColor = Color.Transparent
         Label42.Font = New Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label42.ForeColor = Color.DarkOrange
-        Label42.Location = New Point(226, 58)
+        Label42.Location = New Point(226, 83)
         Label42.Margin = New Padding(2, 0, 2, 0)
         Label42.Name = "Label42"
         Label42.Size = New Size(459, 20)
@@ -315,7 +313,7 @@ Partial Class Form_Admin
         ' 
         Panel9.Controls.Add(tabAboutMe)
         Panel9.Location = New Point(21, 255)
-        Panel9.Margin = New Padding(2, 2, 2, 2)
+        Panel9.Margin = New Padding(2)
         Panel9.Name = "Panel9"
         Panel9.Size = New Size(1210, 494)
         Panel9.TabIndex = 1
@@ -326,7 +324,7 @@ Partial Class Form_Admin
         tabAboutMe.Controls.Add(tab1)
         tabAboutMe.Font = New Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         tabAboutMe.Location = New Point(2, 2)
-        tabAboutMe.Margin = New Padding(2, 2, 2, 2)
+        tabAboutMe.Margin = New Padding(2)
         tabAboutMe.Name = "tabAboutMe"
         tabAboutMe.SelectedIndex = 0
         tabAboutMe.Size = New Size(1205, 489)
@@ -338,9 +336,9 @@ Partial Class Form_Admin
         tab1.Controls.Add(Panel7)
         tab1.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         tab1.Location = New Point(4, 36)
-        tab1.Margin = New Padding(2, 2, 2, 2)
+        tab1.Margin = New Padding(2)
         tab1.Name = "tab1"
-        tab1.Padding = New Padding(2, 2, 2, 2)
+        tab1.Padding = New Padding(2)
         tab1.Size = New Size(1197, 449)
         tab1.TabIndex = 0
         tab1.Text = "About Me"
@@ -349,13 +347,13 @@ Partial Class Form_Admin
         ' Panel8
         ' 
         Panel8.BorderStyle = BorderStyle.Fixed3D
-        Panel8.Controls.Add(TextBox7)
-        Panel8.Controls.Add(TextBox6)
-        Panel8.Controls.Add(TextBox5)
-        Panel8.Controls.Add(TextBox4)
-        Panel8.Controls.Add(TextBox3)
-        Panel8.Controls.Add(TextBox2)
-        Panel8.Controls.Add(TextBox1)
+        Panel8.Controls.Add(txtContactNumber)
+        Panel8.Controls.Add(txtEmail)
+        Panel8.Controls.Add(txtDateOfBirth)
+        Panel8.Controls.Add(txtGender)
+        Panel8.Controls.Add(txtMiddleName)
+        Panel8.Controls.Add(txtFirstName)
+        Panel8.Controls.Add(txtLastName)
         Panel8.Controls.Add(Label20)
         Panel8.Controls.Add(Label21)
         Panel8.Controls.Add(Label22)
@@ -364,79 +362,79 @@ Partial Class Form_Admin
         Panel8.Controls.Add(Label31)
         Panel8.Controls.Add(Label32)
         Panel8.Location = New Point(14, 106)
-        Panel8.Margin = New Padding(2, 2, 2, 2)
+        Panel8.Margin = New Padding(2)
         Panel8.Name = "Panel8"
         Panel8.Size = New Size(1173, 330)
         Panel8.TabIndex = 1
         ' 
-        ' TextBox7
+        ' txtContactNumber
         ' 
-        TextBox7.Enabled = False
-        TextBox7.Location = New Point(774, 221)
-        TextBox7.Margin = New Padding(2, 2, 2, 2)
-        TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(252, 30)
-        TextBox7.TabIndex = 12
+        txtContactNumber.Enabled = False
+        txtContactNumber.Location = New Point(798, 219)
+        txtContactNumber.Margin = New Padding(2)
+        txtContactNumber.Name = "txtContactNumber"
+        txtContactNumber.Size = New Size(252, 30)
+        txtContactNumber.TabIndex = 12
         ' 
-        ' TextBox6
+        ' txtEmail
         ' 
-        TextBox6.Enabled = False
-        TextBox6.Location = New Point(774, 159)
-        TextBox6.Margin = New Padding(2, 2, 2, 2)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(252, 30)
-        TextBox6.TabIndex = 11
+        txtEmail.Enabled = False
+        txtEmail.Location = New Point(798, 157)
+        txtEmail.Margin = New Padding(2)
+        txtEmail.Name = "txtEmail"
+        txtEmail.Size = New Size(252, 30)
+        txtEmail.TabIndex = 11
         ' 
-        ' TextBox5
+        ' txtDateOfBirth
         ' 
-        TextBox5.Enabled = False
-        TextBox5.Location = New Point(777, 102)
-        TextBox5.Margin = New Padding(2, 2, 2, 2)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(252, 30)
-        TextBox5.TabIndex = 10
+        txtDateOfBirth.Enabled = False
+        txtDateOfBirth.Location = New Point(801, 100)
+        txtDateOfBirth.Margin = New Padding(2)
+        txtDateOfBirth.Name = "txtDateOfBirth"
+        txtDateOfBirth.Size = New Size(252, 30)
+        txtDateOfBirth.TabIndex = 10
         ' 
-        ' TextBox4
+        ' txtGender
         ' 
-        TextBox4.Enabled = False
-        TextBox4.Location = New Point(777, 50)
-        TextBox4.Margin = New Padding(2, 2, 2, 2)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(252, 30)
-        TextBox4.TabIndex = 8
+        txtGender.Enabled = False
+        txtGender.Location = New Point(801, 48)
+        txtGender.Margin = New Padding(2)
+        txtGender.Name = "txtGender"
+        txtGender.Size = New Size(252, 30)
+        txtGender.TabIndex = 8
         ' 
-        ' TextBox3
+        ' txtMiddleName
         ' 
-        TextBox3.Enabled = False
-        TextBox3.Location = New Point(247, 209)
-        TextBox3.Margin = New Padding(2, 2, 2, 2)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(252, 30)
-        TextBox3.TabIndex = 9
+        txtMiddleName.Enabled = False
+        txtMiddleName.Location = New Point(264, 183)
+        txtMiddleName.Margin = New Padding(2)
+        txtMiddleName.Name = "txtMiddleName"
+        txtMiddleName.Size = New Size(252, 30)
+        txtMiddleName.TabIndex = 9
         ' 
-        ' TextBox2
+        ' txtFirstName
         ' 
-        TextBox2.Enabled = False
-        TextBox2.Location = New Point(247, 138)
-        TextBox2.Margin = New Padding(2, 2, 2, 2)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(252, 30)
-        TextBox2.TabIndex = 8
+        txtFirstName.Enabled = False
+        txtFirstName.Location = New Point(264, 112)
+        txtFirstName.Margin = New Padding(2)
+        txtFirstName.Name = "txtFirstName"
+        txtFirstName.Size = New Size(252, 30)
+        txtFirstName.TabIndex = 8
         ' 
-        ' TextBox1
+        ' txtLastName
         ' 
-        TextBox1.Enabled = False
-        TextBox1.Location = New Point(247, 78)
-        TextBox1.Margin = New Padding(2, 2, 2, 2)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(252, 30)
-        TextBox1.TabIndex = 7
+        txtLastName.Enabled = False
+        txtLastName.Location = New Point(264, 52)
+        txtLastName.Margin = New Padding(2)
+        txtLastName.Name = "txtLastName"
+        txtLastName.Size = New Size(252, 30)
+        txtLastName.TabIndex = 7
         ' 
         ' Label20
         ' 
         Label20.AutoSize = True
         Label20.Font = New Font("Tahoma", 12F, FontStyle.Bold)
-        Label20.Location = New Point(610, 225)
+        Label20.Location = New Point(606, 225)
         Label20.Margin = New Padding(2, 0, 2, 0)
         Label20.Name = "Label20"
         Label20.Size = New Size(181, 24)
@@ -447,7 +445,7 @@ Partial Class Form_Admin
         ' 
         Label21.AutoSize = True
         Label21.Font = New Font("Tahoma", 12F, FontStyle.Bold)
-        Label21.Location = New Point(706, 163)
+        Label21.Location = New Point(714, 163)
         Label21.Margin = New Padding(2, 0, 2, 0)
         Label21.Name = "Label21"
         Label21.Size = New Size(72, 24)
@@ -458,7 +456,7 @@ Partial Class Form_Admin
         ' 
         Label22.AutoSize = True
         Label22.Font = New Font("Tahoma", 12F, FontStyle.Bold)
-        Label22.Location = New Point(642, 106)
+        Label22.Location = New Point(639, 106)
         Label22.Margin = New Padding(2, 0, 2, 0)
         Label22.Name = "Label22"
         Label22.Size = New Size(146, 24)
@@ -469,7 +467,7 @@ Partial Class Form_Admin
         ' 
         Label28.AutoSize = True
         Label28.Font = New Font("Tahoma", 12F, FontStyle.Bold)
-        Label28.Location = New Point(690, 54)
+        Label28.Location = New Point(693, 54)
         Label28.Margin = New Padding(2, 0, 2, 0)
         Label28.Name = "Label28"
         Label28.Size = New Size(91, 24)
@@ -480,7 +478,7 @@ Partial Class Form_Admin
         ' 
         Label30.AutoSize = True
         Label30.Font = New Font("Tahoma", 12F, FontStyle.Bold)
-        Label30.Location = New Point(107, 211)
+        Label30.Location = New Point(100, 183)
         Label30.Margin = New Padding(2, 0, 2, 0)
         Label30.Name = "Label30"
         Label30.Size = New Size(149, 24)
@@ -491,7 +489,7 @@ Partial Class Form_Admin
         ' 
         Label31.AutoSize = True
         Label31.Font = New Font("Tahoma", 12F, FontStyle.Bold)
-        Label31.Location = New Point(129, 142)
+        Label31.Location = New Point(125, 114)
         Label31.Margin = New Padding(2, 0, 2, 0)
         Label31.Name = "Label31"
         Label31.Size = New Size(126, 24)
@@ -502,7 +500,7 @@ Partial Class Form_Admin
         ' 
         Label32.AutoSize = True
         Label32.Font = New Font("Tahoma", 12F, FontStyle.Bold)
-        Label32.Location = New Point(130, 82)
+        Label32.Location = New Point(130, 54)
         Label32.Margin = New Padding(2, 0, 2, 0)
         Label32.Name = "Label32"
         Label32.Size = New Size(122, 24)
@@ -516,7 +514,7 @@ Partial Class Form_Admin
         Panel7.Controls.Add(Label29)
         Panel7.ForeColor = Color.White
         Panel7.Location = New Point(14, 15)
-        Panel7.Margin = New Padding(2, 2, 2, 2)
+        Panel7.Margin = New Padding(2)
         Panel7.Name = "Panel7"
         Panel7.Size = New Size(1173, 74)
         Panel7.TabIndex = 0
@@ -668,7 +666,7 @@ Partial Class Form_Admin
         Panel6.Controls.Add(PictureBox2)
         Panel6.Controls.Add(Label13)
         Panel6.Location = New Point(308, 106)
-        Panel6.Margin = New Padding(2, 2, 2, 2)
+        Panel6.Margin = New Padding(2)
         Panel6.Name = "Panel6"
         Panel6.Size = New Size(1210, 194)
         Panel6.TabIndex = 12
@@ -795,7 +793,7 @@ Partial Class Form_Admin
         ' 
         PictureBox2.Image = My.Resources.Resources.icons8_avatar_96
         PictureBox2.Location = New Point(28, 15)
-        PictureBox2.Margin = New Padding(2, 2, 2, 2)
+        PictureBox2.Margin = New Padding(2)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(160, 160)
         PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
@@ -1016,9 +1014,6 @@ Partial Class Form_Admin
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
-        ' AnimationTimer1
-        ' 
-        ' 
         ' Form_Admin
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -1075,7 +1070,6 @@ Partial Class Form_Admin
     Friend WithEvents Button6 As Button
     Friend WithEvents Button10 As Button
     Friend WithEvents Button9 As Button
-    Friend WithEvents AnimationTimer1 As Timer
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
@@ -1094,13 +1088,13 @@ Partial Class Form_Admin
     Friend WithEvents tabAboutMe As TabControl
     Friend WithEvents tab1 As TabPage
     Friend WithEvents Panel8 As Panel
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtContactNumber As TextBox
+    Friend WithEvents txtEmail As TextBox
+    Friend WithEvents txtDateOfBirth As TextBox
+    Friend WithEvents txtGender As TextBox
+    Friend WithEvents txtMiddleName As TextBox
+    Friend WithEvents txtFirstName As TextBox
+    Friend WithEvents txtLastName As TextBox
     Friend WithEvents Label20 As Label
     Friend WithEvents Label21 As Label
     Friend WithEvents Label22 As Label
@@ -1112,15 +1106,15 @@ Partial Class Form_Admin
     Friend WithEvents Label29 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Panel11 As Panel
-    Friend WithEvents Label33 As Label
-    Friend WithEvents Label34 As Label
+    Friend WithEvents lblContact As Label
+    Friend WithEvents lblDept As Label
     Friend WithEvents Label35 As Label
-    Friend WithEvents Label36 As Label
+    Friend WithEvents lblEmail As Label
     Friend WithEvents Label37 As Label
     Friend WithEvents Label38 As Label
     Friend WithEvents Label39 As Label
-    Friend WithEvents Label40 As Label
-    Friend WithEvents Label41 As Label
+    Friend WithEvents lblFullName As Label
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label42 As Label
+    Friend WithEvents Label40 As Label
 End Class

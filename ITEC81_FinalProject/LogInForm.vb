@@ -19,8 +19,10 @@
             MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
             If currUser = "ADMIN" Then
+                Form_Admin.Name = username
                 Me.Hide()
                 Form_Admin.Show()
+
             ElseIf currUser = "STUDENT" Then
                 Me.Hide()
                 'StudentForm.Show()

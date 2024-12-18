@@ -1,15 +1,49 @@
-﻿Public Class Form_Admin
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports MySql.Data
+Imports MySql.Data.MySqlClient
 
-    Dim isHovered As Boolean = False
-    Dim animationTimer As Timer
+Public Class Form_Admin
 
     Private Sub Form_Admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        animationTimer = New Timer()
-        animationTimer.Interval = 30
+
+        Dim username = Me.Name
+
+        Try
+            conn.Open()
+            Dim query As String = "SELECT AdminID, LastName, FirstName, MiddleName, Department, EmailAddress, ContactNumber, BirthDate, Gender FROM tb_admin WHERE username = @username"
+            Dim cmd As New MySqlCommand(query, conn)
+            cmd.Parameters.AddWithValue("@username", username)
+
+            Using reader As MySqlDataReader = cmd.ExecuteReader()
+                If reader.Read() Then
+                    txtLastName.Text = reader("LastName").ToString()
+                    txtFirstName.Text = reader("FirstName").ToString()
+                    txtMiddleName.Text = reader("MiddleName").ToString()
+                    lblDept.Text = reader("Department").ToString()
+                    txtEmail.Text = reader("EmailAddress").ToString()
+                    txtContactNumber.Text = reader("ContactNumber").ToString()
+                    txtDateOfBirth.Text = reader("BirthDate").ToString()
+                    txtGender.Text = reader("Gender").ToString()
+
+                    Dim MiddleInitial = reader("MiddleName").ToString
+                    lblFullName.Text = reader("LastName").ToString + ", " + reader("FirstName").ToString + " " + MiddleInitial(0) + "."
+                    lblEmail.Text = reader("EmailAddress").ToString
+                    lblContact.Text = reader("ContactNumber").ToString()
+                    conn.Close()
+                Else
+                    MessageBox.Show("No Data Found.")
+                End If
+            End Using
+
+        Catch ex As Exception
+
+            MessageBox.Show("Error: " & ex.Message)
+            conn.Close()
+
+        End Try
     End Sub
 
     Private Sub btnHover(sender As Object, e As EventArgs) Handles btnStudent.MouseMove, Button1.MouseMove, Button2.MouseMove, Button3.MouseMove, Button4.MouseMove
-        animationTimer.Start()
         sender.ForeColor = Color.White
     End Sub
 
@@ -19,13 +53,8 @@
         Button2.ForeColor = Color.Black
         Button3.ForeColor = Color.Black
         Button4.ForeColor = Color.Black
-        isHovered = True
-        animationTimer.Stop()
     End Sub
 
-    Private Sub AnimationTimer1_Tick(sender As Object, e As EventArgs) Handles AnimationTimer1.Tick
-
-    End Sub
 
 
 End Class
