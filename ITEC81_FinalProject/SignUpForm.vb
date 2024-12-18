@@ -3,13 +3,14 @@
 
     End Sub
 
-    Private Sub rdbStudent_CheckedChanged(sender As Object, e As EventArgs)
-        rdbFaculty.Checked = False
-
+    Private Sub rdbStudent_CheckedChanged(sender As Object, e As EventArgs) Handles rdbStudent.Click
+        btnSignUp.BackColor = Color.Navy
+        btnBack.FlatAppearance.MouseOverBackColor = Color.Navy
     End Sub
 
-    Private Sub rdbFaculty_CheckedChanged(sender As Object, e As EventArgs)
-        rdbStudent.Checked = False
+    Private Sub rdbFaculty_CheckedChanged(sender As Object, e As EventArgs) Handles rdbFaculty.Click
+        btnSignUp.BackColor = Color.Maroon
+        btnBack.FlatAppearance.MouseOverBackColor = Color.Maroon
 
     End Sub
 
@@ -30,6 +31,7 @@
             CurrUser = "ADMIN"
         ElseIf rdbStudent.Checked = True Then
             CurrUser = "STUDENT"
+
         Else
             MessageBox.Show("Please choose user category", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
@@ -55,5 +57,4 @@
     Private Sub Label1_HoverLeave(sender As Object, e As EventArgs) Handles Label1.MouseLeave
         Label1.ForeColor = Color.Black
     End Sub
-
 End Class

@@ -22,7 +22,9 @@ Partial Class SignUpForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SignUpForm))
         PanelLogIn = New Panel()
+        Label1 = New Label()
         GroupBox1 = New GroupBox()
         rdbFaculty = New RadioButton()
         rdbStudent = New RadioButton()
@@ -33,7 +35,6 @@ Partial Class SignUpForm
         Label2 = New Label()
         txtUsername = New TextBox()
         PictureBox1 = New PictureBox()
-        Label1 = New Label()
         PanelLogIn.SuspendLayout()
         GroupBox1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -41,7 +42,7 @@ Partial Class SignUpForm
         ' 
         ' PanelLogIn
         ' 
-        PanelLogIn.BackgroundImage = My.Resources.Resources.bg11
+        PanelLogIn.BackColor = Color.Transparent
         PanelLogIn.BackgroundImageLayout = ImageLayout.Stretch
         PanelLogIn.Controls.Add(Label1)
         PanelLogIn.Controls.Add(GroupBox1)
@@ -54,8 +55,20 @@ Partial Class SignUpForm
         PanelLogIn.Controls.Add(PictureBox1)
         PanelLogIn.Location = New Point(-3, -1)
         PanelLogIn.Name = "PanelLogIn"
-        PanelLogIn.Size = New Size(522, 629)
+        PanelLogIn.Size = New Size(522, 634)
         PanelLogIn.TabIndex = 5
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.FlatStyle = FlatStyle.Popup
+        Label1.Font = New Font("Tempus Sans ITC", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(474, 10)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(31, 39)
+        Label1.TabIndex = 9
+        Label1.Text = "x"
         ' 
         ' GroupBox1
         ' 
@@ -114,7 +127,7 @@ Partial Class SignUpForm
         ' 
         ' btnSignUp
         ' 
-        btnSignUp.BackColor = Color.Brown
+        btnSignUp.BackColor = Color.Transparent
         btnSignUp.FlatAppearance.BorderColor = Color.LightGray
         btnSignUp.FlatAppearance.MouseOverBackColor = Color.Transparent
         btnSignUp.FlatStyle = FlatStyle.Flat
@@ -171,30 +184,20 @@ Partial Class SignUpForm
         ' 
         PictureBox1.BackColor = Color.Transparent
         PictureBox1.Image = My.Resources.Resources.SIGN_UP_FORM_removebg_preview
-        PictureBox1.Location = New Point(71, 89)
+        PictureBox1.Location = New Point(87, 47)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(383, 125)
+        PictureBox1.Size = New Size(328, 201)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 8
         PictureBox1.TabStop = False
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
-        Label1.FlatStyle = FlatStyle.Popup
-        Label1.Font = New Font("Tempus Sans ITC", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(474, 10)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(31, 39)
-        Label1.TabIndex = 9
-        Label1.Text = "x"
         ' 
         ' SignUpForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(514, 620)
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(867, 632)
         ControlBox = False
         Controls.Add(PanelLogIn)
         FormBorderStyle = FormBorderStyle.None
