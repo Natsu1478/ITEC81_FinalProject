@@ -22,9 +22,14 @@ Partial Class Form_Admin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Admin))
         Panel1 = New Panel()
+        Panel4 = New Panel()
         pnlMAIN = New Panel()
+        Button3 = New Button()
+        Button2 = New Button()
+        Button1 = New Button()
         pnlProfile = New Panel()
         Panel11 = New Panel()
         lblContact = New Label()
@@ -59,11 +64,7 @@ Partial Class Form_Admin
         Panel7 = New Panel()
         Label29 = New Label()
         Label14 = New Label()
-        Button3 = New Button()
         Button4 = New Button()
-        Panel4 = New Panel()
-        Button2 = New Button()
-        Button1 = New Button()
         btnStudent = New Button()
         Panel2 = New Panel()
         Panel6 = New Panel()
@@ -91,6 +92,48 @@ Partial Class Form_Admin
         Panel3 = New Panel()
         Label3 = New Label()
         PictureBox1 = New PictureBox()
+        Timer1 = New Timer(components)
+        pnlActivities = New Panel()
+        Panel10 = New Panel()
+        Label15 = New Label()
+        Label16 = New Label()
+        Label17 = New Label()
+        Label18 = New Label()
+        Label19 = New Label()
+        Label23 = New Label()
+        Label24 = New Label()
+        Label25 = New Label()
+        Label26 = New Label()
+        PictureBox3 = New PictureBox()
+        Label27 = New Label()
+        Panel12 = New Panel()
+        tabActivity = New TabControl()
+        tabActivityList = New TabPage()
+        Panel13 = New Panel()
+        lstActivityList = New ListView()
+        btnAddNewActivity = New Button()
+        Panel14 = New Panel()
+        Label33 = New Label()
+        tabManageActivity = New TabPage()
+        Panel15 = New Panel()
+        btnDeleteActivity = New Button()
+        txtActivityName = New TextBox()
+        btnEditActivity = New Button()
+        Label34 = New Label()
+        btnClear = New Button()
+        Label36 = New Label()
+        dtpEndDate = New DateTimePicker()
+        Label41 = New Label()
+        dtpStartDate = New DateTimePicker()
+        Label43 = New Label()
+        txtFacultyAdviser = New TextBox()
+        Label44 = New Label()
+        Label45 = New Label()
+        txtActivityType = New TextBox()
+        txtDescription = New TextBox()
+        Panel16 = New Panel()
+        Label46 = New Label()
+        Label47 = New Label()
         Panel1.SuspendLayout()
         pnlMAIN.SuspendLayout()
         pnlProfile.SuspendLayout()
@@ -107,43 +150,124 @@ Partial Class Form_Admin
         Panel5.SuspendLayout()
         Panel3.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        pnlActivities.SuspendLayout()
+        Panel10.SuspendLayout()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        Panel12.SuspendLayout()
+        tabActivity.SuspendLayout()
+        tabActivityList.SuspendLayout()
+        Panel13.SuspendLayout()
+        Panel14.SuspendLayout()
+        tabManageActivity.SuspendLayout()
+        Panel15.SuspendLayout()
+        Panel16.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.White
-        Panel1.Controls.Add(pnlMAIN)
-        Panel1.Controls.Add(Button3)
-        Panel1.Controls.Add(Button4)
         Panel1.Controls.Add(Panel4)
-        Panel1.Controls.Add(Button2)
-        Panel1.Controls.Add(Button1)
-        Panel1.Controls.Add(btnStudent)
+        Panel1.Controls.Add(pnlMAIN)
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1566, 825)
         Panel1.TabIndex = 0
         ' 
+        ' Panel4
+        ' 
+        Panel4.BackColor = Color.Maroon
+        Panel4.Location = New Point(286, 0)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(1253, 61)
+        Panel4.TabIndex = 2
+        ' 
         ' pnlMAIN
         ' 
+        pnlMAIN.BackgroundImage = My.Resources.Resources.bg7
+        pnlMAIN.BackgroundImageLayout = ImageLayout.Stretch
         pnlMAIN.Controls.Add(pnlProfile)
+        pnlMAIN.Controls.Add(Button3)
+        pnlMAIN.Controls.Add(Button2)
+        pnlMAIN.Controls.Add(Button1)
+        pnlMAIN.Controls.Add(Button4)
+        pnlMAIN.Controls.Add(btnStudent)
         pnlMAIN.Location = New Point(286, 60)
         pnlMAIN.Margin = New Padding(2)
         pnlMAIN.Name = "pnlMAIN"
-        pnlMAIN.Size = New Size(1259, 766)
+        pnlMAIN.Size = New Size(1253, 766)
         pnlMAIN.TabIndex = 11
+        ' 
+        ' Button3
+        ' 
+        Button3.BackColor = Color.Transparent
+        Button3.BackgroundImage = My.Resources.Resources.border__1_
+        Button3.BackgroundImageLayout = ImageLayout.Stretch
+        Button3.FlatAppearance.BorderSize = 0
+        Button3.FlatAppearance.CheckedBackColor = Color.Maroon
+        Button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
+        Button3.FlatAppearance.MouseOverBackColor = Color.Brown
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.Font = New Font("Tahoma", 18F, FontStyle.Bold)
+        Button3.ForeColor = Color.LightGray
+        Button3.Location = New Point(459, 296)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(358, 239)
+        Button3.TabIndex = 10
+        Button3.Text = "Ratings"
+        Button3.UseVisualStyleBackColor = False
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.Transparent
+        Button2.BackgroundImage = My.Resources.Resources.border__1_
+        Button2.BackgroundImageLayout = ImageLayout.Stretch
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatAppearance.CheckedBackColor = Color.Maroon
+        Button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
+        Button2.FlatAppearance.MouseOverBackColor = Color.Brown
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Tahoma", 18F, FontStyle.Bold)
+        Button2.ForeColor = Color.LightGray
+        Button2.Location = New Point(847, 33)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(358, 239)
+        Button2.TabIndex = 8
+        Button2.Text = "Enrollees"
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.Transparent
+        Button1.BackgroundImage = My.Resources.Resources.border__1_
+        Button1.BackgroundImageLayout = ImageLayout.Stretch
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatAppearance.CheckedBackColor = Color.Maroon
+        Button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
+        Button1.FlatAppearance.MouseOverBackColor = Color.Brown
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Tahoma", 18F, FontStyle.Bold)
+        Button1.ForeColor = Color.LightGray
+        Button1.Location = New Point(459, 33)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(358, 239)
+        Button1.TabIndex = 6
+        Button1.Text = "Activities"
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' pnlProfile
         ' 
         pnlProfile.AutoSize = True
         pnlProfile.BorderStyle = BorderStyle.Fixed3D
+        pnlProfile.Controls.Add(pnlActivities)
         pnlProfile.Controls.Add(Panel11)
         pnlProfile.Controls.Add(Panel9)
         pnlProfile.Controls.Add(Label14)
+        pnlProfile.Dock = DockStyle.Fill
         pnlProfile.Location = New Point(0, 0)
         pnlProfile.Name = "pnlProfile"
-        pnlProfile.Size = New Size(1259, 768)
+        pnlProfile.Size = New Size(1253, 766)
         pnlProfile.TabIndex = 2
+        pnlProfile.Visible = False
         ' 
         ' Panel11
         ' 
@@ -543,99 +667,47 @@ Partial Class Form_Admin
         Label14.TabIndex = 0
         Label14.Text = "Admin Profile"
         ' 
-        ' Button3
-        ' 
-        Button3.BackColor = Color.WhiteSmoke
-        Button3.FlatAppearance.BorderSize = 0
-        Button3.FlatAppearance.CheckedBackColor = Color.DarkRed
-        Button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
-        Button3.FlatAppearance.MouseOverBackColor = Color.Maroon
-        Button3.FlatStyle = FlatStyle.Flat
-        Button3.Font = New Font("Georgia", 18F, FontStyle.Bold)
-        Button3.Location = New Point(732, 285)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(358, 126)
-        Button3.TabIndex = 10
-        Button3.Text = "Ratings"
-        Button3.UseVisualStyleBackColor = False
-        ' 
         ' Button4
         ' 
-        Button4.BackColor = Color.WhiteSmoke
+        Button4.BackColor = Color.Transparent
+        Button4.BackgroundImage = My.Resources.Resources.border__1_
+        Button4.BackgroundImageLayout = ImageLayout.Stretch
         Button4.FlatAppearance.BorderSize = 0
-        Button4.FlatAppearance.CheckedBackColor = Color.DarkRed
+        Button4.FlatAppearance.CheckedBackColor = Color.Maroon
         Button4.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
-        Button4.FlatAppearance.MouseOverBackColor = Color.Maroon
+        Button4.FlatAppearance.MouseOverBackColor = Color.Brown
         Button4.FlatStyle = FlatStyle.Flat
-        Button4.Font = New Font("Georgia", 18F, FontStyle.Bold)
-        Button4.Location = New Point(330, 285)
+        Button4.Font = New Font("Tahoma", 18F, FontStyle.Bold)
+        Button4.ForeColor = Color.LightGray
+        Button4.Location = New Point(77, 296)
         Button4.Name = "Button4"
-        Button4.Size = New Size(358, 126)
+        Button4.Size = New Size(358, 239)
         Button4.TabIndex = 9
         Button4.Text = "Schedule"
         Button4.UseVisualStyleBackColor = False
         ' 
-        ' Panel4
-        ' 
-        Panel4.BackColor = Color.Maroon
-        Panel4.Dock = DockStyle.Top
-        Panel4.Location = New Point(0, 0)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(1566, 61)
-        Panel4.TabIndex = 2
-        ' 
-        ' Button2
-        ' 
-        Button2.BackColor = Color.WhiteSmoke
-        Button2.FlatAppearance.BorderSize = 0
-        Button2.FlatAppearance.CheckedBackColor = Color.DarkRed
-        Button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
-        Button2.FlatAppearance.MouseOverBackColor = Color.Maroon
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Georgia", 18F, FontStyle.Bold)
-        Button2.Location = New Point(1134, 119)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(358, 126)
-        Button2.TabIndex = 8
-        Button2.Text = "Enrollees"
-        Button2.UseVisualStyleBackColor = False
-        ' 
-        ' Button1
-        ' 
-        Button1.BackColor = Color.WhiteSmoke
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatAppearance.CheckedBackColor = Color.DarkRed
-        Button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
-        Button1.FlatAppearance.MouseOverBackColor = Color.Maroon
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Georgia", 18F, FontStyle.Bold)
-        Button1.Location = New Point(732, 119)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(358, 126)
-        Button1.TabIndex = 6
-        Button1.Text = "Activities"
-        Button1.UseVisualStyleBackColor = False
-        ' 
         ' btnStudent
         ' 
-        btnStudent.BackColor = Color.WhiteSmoke
+        btnStudent.BackColor = Color.Transparent
+        btnStudent.BackgroundImage = My.Resources.Resources.border__1_
+        btnStudent.BackgroundImageLayout = ImageLayout.Stretch
         btnStudent.FlatAppearance.BorderSize = 0
-        btnStudent.FlatAppearance.CheckedBackColor = Color.DarkRed
+        btnStudent.FlatAppearance.CheckedBackColor = Color.Maroon
         btnStudent.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
-        btnStudent.FlatAppearance.MouseOverBackColor = Color.Maroon
+        btnStudent.FlatAppearance.MouseOverBackColor = Color.Brown
         btnStudent.FlatStyle = FlatStyle.Flat
-        btnStudent.Font = New Font("Georgia", 18F, FontStyle.Bold)
-        btnStudent.Location = New Point(330, 119)
+        btnStudent.Font = New Font("Tahoma", 18F, FontStyle.Bold)
+        btnStudent.ForeColor = Color.LightGray
+        btnStudent.Location = New Point(77, 31)
         btnStudent.Name = "btnStudent"
-        btnStudent.Size = New Size(358, 126)
+        btnStudent.Size = New Size(358, 239)
         btnStudent.TabIndex = 5
-        btnStudent.Text = "Admin Profile "
-        btnStudent.TextAlign = ContentAlignment.TopLeft
-        btnStudent.UseVisualStyleBackColor = True
+        btnStudent.Text = "Admin Profile"
+        btnStudent.UseVisualStyleBackColor = False
         ' 
         ' Panel2
         ' 
-        Panel2.BackColor = Color.Gray
+        Panel2.BackColor = Color.Black
         Panel2.Controls.Add(Panel6)
         Panel2.Controls.Add(Panel5)
         Panel2.Controls.Add(lblFName)
@@ -956,7 +1028,8 @@ Partial Class Form_Admin
         ' lblFName
         ' 
         lblFName.AutoSize = True
-        lblFName.Font = New Font("Georgia", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblFName.Font = New Font("Georgia", 13.8F, FontStyle.Bold)
+        lblFName.ForeColor = Color.White
         lblFName.Location = New Point(140, 285)
         lblFName.Name = "lblFName"
         lblFName.Size = New Size(83, 27)
@@ -966,7 +1039,8 @@ Partial Class Form_Admin
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Georgia", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Georgia", 13.8F, FontStyle.Bold)
+        Label2.ForeColor = Color.White
         Label2.Location = New Point(49, 285)
         Label2.Name = "Label2"
         Label2.Size = New Size(85, 27)
@@ -1014,6 +1088,520 @@ Partial Class Form_Admin
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
+        ' Timer1
+        ' 
+        Timer1.Interval = 1
+        ' 
+        ' pnlActivities
+        ' 
+        pnlActivities.AutoSize = True
+        pnlActivities.BorderStyle = BorderStyle.Fixed3D
+        pnlActivities.Controls.Add(Panel10)
+        pnlActivities.Controls.Add(Panel12)
+        pnlActivities.Controls.Add(Label47)
+        pnlActivities.Location = New Point(-2, -3)
+        pnlActivities.Name = "pnlActivities"
+        pnlActivities.Size = New Size(1252, 768)
+        pnlActivities.TabIndex = 3
+        ' 
+        ' Panel10
+        ' 
+        Panel10.AutoSize = True
+        Panel10.BackColor = Color.Gainsboro
+        Panel10.BorderStyle = BorderStyle.Fixed3D
+        Panel10.Controls.Add(Label15)
+        Panel10.Controls.Add(Label16)
+        Panel10.Controls.Add(Label17)
+        Panel10.Controls.Add(Label18)
+        Panel10.Controls.Add(Label19)
+        Panel10.Controls.Add(Label23)
+        Panel10.Controls.Add(Label24)
+        Panel10.Controls.Add(Label25)
+        Panel10.Controls.Add(Label26)
+        Panel10.Controls.Add(PictureBox3)
+        Panel10.Controls.Add(Label27)
+        Panel10.Location = New Point(21, 43)
+        Panel10.Margin = New Padding(2)
+        Panel10.Name = "Panel10"
+        Panel10.Size = New Size(1210, 194)
+        Panel10.TabIndex = 1
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoEllipsis = True
+        Label15.AutoSize = True
+        Label15.Font = New Font("Tahoma", 11F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label15.ImageAlign = ContentAlignment.MiddleLeft
+        Label15.Location = New Point(798, 154)
+        Label15.Margin = New Padding(2, 0, 2, 0)
+        Label15.Name = "Label15"
+        Label15.RightToLeft = RightToLeft.No
+        Label15.Size = New Size(120, 23)
+        Label15.TabIndex = 10
+        Label15.Text = "09123456789"
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoEllipsis = True
+        Label16.AutoSize = True
+        Label16.Font = New Font("Tahoma", 11F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label16.ImageAlign = ContentAlignment.MiddleLeft
+        Label16.Location = New Point(798, 42)
+        Label16.Margin = New Padding(2, 0, 2, 0)
+        Label16.Name = "Label16"
+        Label16.RightToLeft = RightToLeft.No
+        Label16.Size = New Size(245, 23)
+        Label16.TabIndex = 9
+        Label16.Text = "School Of Computer Studies"
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.Font = New Font("Tahoma", 11F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label17.ImageAlign = ContentAlignment.MiddleLeft
+        Label17.Location = New Point(725, 144)
+        Label17.Margin = New Padding(2, 0, 2, 0)
+        Label17.Name = "Label17"
+        Label17.RightToLeft = RightToLeft.No
+        Label17.Size = New Size(0, 23)
+        Label17.TabIndex = 8
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoEllipsis = True
+        Label18.AutoSize = True
+        Label18.Font = New Font("Tahoma", 11F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label18.ImageAlign = ContentAlignment.MiddleLeft
+        Label18.Location = New Point(798, 97)
+        Label18.Margin = New Padding(2, 0, 2, 0)
+        Label18.Name = "Label18"
+        Label18.RightToLeft = RightToLeft.No
+        Label18.Size = New Size(360, 23)
+        Label18.TabIndex = 7
+        Label18.Text = "glevenn@citycollegeoftagaytaycity.edu.ph"
+        ' 
+        ' Label19
+        ' 
+        Label19.AutoEllipsis = True
+        Label19.Font = New Font("Tahoma", 11F, FontStyle.Bold)
+        Label19.Image = My.Resources.Resources.icons8_phone_number_20
+        Label19.ImageAlign = ContentAlignment.MiddleLeft
+        Label19.Location = New Point(798, 129)
+        Label19.Margin = New Padding(2, 0, 2, 0)
+        Label19.Name = "Label19"
+        Label19.RightToLeft = RightToLeft.No
+        Label19.Size = New Size(190, 22)
+        Label19.TabIndex = 6
+        Label19.Text = "     Contact Number: "
+        ' 
+        ' Label23
+        ' 
+        Label23.AutoEllipsis = True
+        Label23.Font = New Font("Tahoma", 11F, FontStyle.Bold)
+        Label23.Image = My.Resources.Resources.icons8_email_18
+        Label23.ImageAlign = ContentAlignment.MiddleLeft
+        Label23.Location = New Point(798, 72)
+        Label23.Margin = New Padding(2, 0, 2, 0)
+        Label23.Name = "Label23"
+        Label23.RightToLeft = RightToLeft.No
+        Label23.Size = New Size(170, 22)
+        Label23.TabIndex = 5
+        Label23.Text = "     Email Address: "
+        ' 
+        ' Label24
+        ' 
+        Label24.AutoEllipsis = True
+        Label24.Font = New Font("Tahoma", 11F, FontStyle.Bold)
+        Label24.Image = My.Resources.Resources.icons8_unit_18
+        Label24.ImageAlign = ContentAlignment.MiddleLeft
+        Label24.Location = New Point(798, 18)
+        Label24.Margin = New Padding(2, 0, 2, 0)
+        Label24.Name = "Label24"
+        Label24.RightToLeft = RightToLeft.No
+        Label24.Size = New Size(151, 22)
+        Label24.TabIndex = 4
+        Label24.Text = "     Department: "
+        ' 
+        ' Label25
+        ' 
+        Label25.AutoSize = True
+        Label25.Font = New Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label25.Location = New Point(226, 83)
+        Label25.Margin = New Padding(2, 0, 2, 0)
+        Label25.Name = "Label25"
+        Label25.Size = New Size(425, 24)
+        Label25.TabIndex = 2
+        Label25.Text = "Bachelor of Science In Information Technology"
+        ' 
+        ' Label26
+        ' 
+        Label26.AutoSize = True
+        Label26.Font = New Font("Tahoma", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label26.Location = New Point(226, 30)
+        Label26.Margin = New Padding(2, 0, 2, 0)
+        Label26.Name = "Label26"
+        Label26.Size = New Size(308, 41)
+        Label26.TabIndex = 1
+        Label26.Text = "Alba, Glerisse Venn"
+        ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.Image = My.Resources.Resources.icons8_avatar_96
+        PictureBox3.Location = New Point(28, 15)
+        PictureBox3.Margin = New Padding(2)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(160, 160)
+        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox3.TabIndex = 0
+        PictureBox3.TabStop = False
+        ' 
+        ' Label27
+        ' 
+        Label27.AutoSize = True
+        Label27.BackColor = Color.Transparent
+        Label27.Font = New Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label27.ForeColor = Color.DarkOrange
+        Label27.Location = New Point(226, 58)
+        Label27.Margin = New Padding(2, 0, 2, 0)
+        Label27.Name = "Label27"
+        Label27.Size = New Size(459, 20)
+        Label27.TabIndex = 3
+        Label27.Text = "___________________________________________________________________________"
+        ' 
+        ' Panel12
+        ' 
+        Panel12.Controls.Add(tabActivity)
+        Panel12.Location = New Point(21, 255)
+        Panel12.Margin = New Padding(2)
+        Panel12.Name = "Panel12"
+        Panel12.Size = New Size(1210, 494)
+        Panel12.TabIndex = 1
+        ' 
+        ' tabActivity
+        ' 
+        tabActivity.Appearance = TabAppearance.Buttons
+        tabActivity.Controls.Add(tabActivityList)
+        tabActivity.Controls.Add(tabManageActivity)
+        tabActivity.Font = New Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        tabActivity.Location = New Point(2, 2)
+        tabActivity.Margin = New Padding(2)
+        tabActivity.Name = "tabActivity"
+        tabActivity.SelectedIndex = 0
+        tabActivity.Size = New Size(1205, 489)
+        tabActivity.TabIndex = 1
+        ' 
+        ' tabActivityList
+        ' 
+        tabActivityList.Controls.Add(Panel13)
+        tabActivityList.Controls.Add(Panel14)
+        tabActivityList.Font = New Font("Franklin Gothic Book", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        tabActivityList.Location = New Point(4, 36)
+        tabActivityList.Margin = New Padding(2)
+        tabActivityList.Name = "tabActivityList"
+        tabActivityList.Padding = New Padding(2)
+        tabActivityList.Size = New Size(1197, 449)
+        tabActivityList.TabIndex = 0
+        tabActivityList.Text = "Activity List"
+        tabActivityList.UseVisualStyleBackColor = True
+        ' 
+        ' Panel13
+        ' 
+        Panel13.BorderStyle = BorderStyle.Fixed3D
+        Panel13.Controls.Add(lstActivityList)
+        Panel13.Controls.Add(btnAddNewActivity)
+        Panel13.Location = New Point(14, 106)
+        Panel13.Margin = New Padding(2)
+        Panel13.Name = "Panel13"
+        Panel13.Size = New Size(1262, 330)
+        Panel13.TabIndex = 1
+        ' 
+        ' lstActivityList
+        ' 
+        lstActivityList.Location = New Point(-2, -2)
+        lstActivityList.Margin = New Padding(2)
+        lstActivityList.Name = "lstActivityList"
+        lstActivityList.Size = New Size(1173, 269)
+        lstActivityList.TabIndex = 19
+        lstActivityList.UseCompatibleStateImageBehavior = False
+        ' 
+        ' btnAddNewActivity
+        ' 
+        btnAddNewActivity.BackColor = Color.Transparent
+        btnAddNewActivity.FlatAppearance.BorderColor = Color.LightGray
+        btnAddNewActivity.FlatAppearance.MouseOverBackColor = Color.Brown
+        btnAddNewActivity.FlatStyle = FlatStyle.Popup
+        btnAddNewActivity.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnAddNewActivity.ForeColor = Color.Black
+        btnAddNewActivity.Location = New Point(523, 278)
+        btnAddNewActivity.Name = "btnAddNewActivity"
+        btnAddNewActivity.Size = New Size(163, 43)
+        btnAddNewActivity.TabIndex = 18
+        btnAddNewActivity.Text = "Add New Activity"
+        btnAddNewActivity.UseVisualStyleBackColor = False
+        ' 
+        ' Panel14
+        ' 
+        Panel14.BackColor = Color.Firebrick
+        Panel14.BorderStyle = BorderStyle.Fixed3D
+        Panel14.Controls.Add(Label33)
+        Panel14.ForeColor = Color.White
+        Panel14.Location = New Point(14, 15)
+        Panel14.Margin = New Padding(2)
+        Panel14.Name = "Panel14"
+        Panel14.Size = New Size(1173, 74)
+        Panel14.TabIndex = 0
+        ' 
+        ' Label33
+        ' 
+        Label33.Font = New Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label33.ImageAlign = ContentAlignment.MiddleLeft
+        Label33.Location = New Point(19, 14)
+        Label33.Margin = New Padding(2, 0, 2, 0)
+        Label33.Name = "Label33"
+        Label33.Size = New Size(311, 34)
+        Label33.TabIndex = 0
+        Label33.Text = "   Activity List"
+        ' 
+        ' tabManageActivity
+        ' 
+        tabManageActivity.Controls.Add(Panel15)
+        tabManageActivity.Controls.Add(Panel16)
+        tabManageActivity.Location = New Point(4, 36)
+        tabManageActivity.Margin = New Padding(2)
+        tabManageActivity.Name = "tabManageActivity"
+        tabManageActivity.Size = New Size(1197, 449)
+        tabManageActivity.TabIndex = 1
+        tabManageActivity.Text = "Manage Activity"
+        tabManageActivity.UseVisualStyleBackColor = True
+        ' 
+        ' Panel15
+        ' 
+        Panel15.BorderStyle = BorderStyle.Fixed3D
+        Panel15.Controls.Add(btnDeleteActivity)
+        Panel15.Controls.Add(txtActivityName)
+        Panel15.Controls.Add(btnEditActivity)
+        Panel15.Controls.Add(Label34)
+        Panel15.Controls.Add(btnClear)
+        Panel15.Controls.Add(Label36)
+        Panel15.Controls.Add(dtpEndDate)
+        Panel15.Controls.Add(Label41)
+        Panel15.Controls.Add(dtpStartDate)
+        Panel15.Controls.Add(Label43)
+        Panel15.Controls.Add(txtFacultyAdviser)
+        Panel15.Controls.Add(Label44)
+        Panel15.Controls.Add(Label45)
+        Panel15.Controls.Add(txtActivityType)
+        Panel15.Controls.Add(txtDescription)
+        Panel15.Location = New Point(14, 108)
+        Panel15.Margin = New Padding(2)
+        Panel15.Name = "Panel15"
+        Panel15.Size = New Size(1173, 330)
+        Panel15.TabIndex = 3
+        ' 
+        ' btnDeleteActivity
+        ' 
+        btnDeleteActivity.BackColor = Color.Transparent
+        btnDeleteActivity.FlatAppearance.BorderColor = Color.LightGray
+        btnDeleteActivity.FlatAppearance.MouseOverBackColor = Color.Brown
+        btnDeleteActivity.FlatStyle = FlatStyle.Popup
+        btnDeleteActivity.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnDeleteActivity.ForeColor = Color.Black
+        btnDeleteActivity.Location = New Point(591, 202)
+        btnDeleteActivity.Name = "btnDeleteActivity"
+        btnDeleteActivity.Size = New Size(163, 43)
+        btnDeleteActivity.TabIndex = 34
+        btnDeleteActivity.Text = "Delete Activity"
+        btnDeleteActivity.UseVisualStyleBackColor = False
+        ' 
+        ' txtActivityName
+        ' 
+        txtActivityName.Enabled = False
+        txtActivityName.Font = New Font("Tahoma", 10F)
+        txtActivityName.Location = New Point(227, 52)
+        txtActivityName.Margin = New Padding(2)
+        txtActivityName.Name = "txtActivityName"
+        txtActivityName.Size = New Size(342, 28)
+        txtActivityName.TabIndex = 25
+        ' 
+        ' btnEditActivity
+        ' 
+        btnEditActivity.BackColor = Color.Transparent
+        btnEditActivity.FlatAppearance.BorderColor = Color.LightGray
+        btnEditActivity.FlatAppearance.MouseOverBackColor = Color.Brown
+        btnEditActivity.FlatStyle = FlatStyle.Popup
+        btnEditActivity.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnEditActivity.ForeColor = Color.Black
+        btnEditActivity.Location = New Point(405, 202)
+        btnEditActivity.Name = "btnEditActivity"
+        btnEditActivity.Size = New Size(163, 43)
+        btnEditActivity.TabIndex = 33
+        btnEditActivity.Text = "Edit Activity"
+        btnEditActivity.UseVisualStyleBackColor = False
+        ' 
+        ' Label34
+        ' 
+        Label34.AutoSize = True
+        Label34.Font = New Font("Tahoma", 12F, FontStyle.Bold)
+        Label34.Location = New Point(70, 56)
+        Label34.Margin = New Padding(2, 0, 2, 0)
+        Label34.Name = "Label34"
+        Label34.Size = New Size(158, 24)
+        Label34.TabIndex = 20
+        Label34.Text = "Activity Name:"
+        ' 
+        ' btnClear
+        ' 
+        btnClear.BackColor = Color.Brown
+        btnClear.FlatAppearance.BorderColor = Color.LightGray
+        btnClear.FlatAppearance.MouseOverBackColor = Color.Transparent
+        btnClear.FlatStyle = FlatStyle.Flat
+        btnClear.Font = New Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnClear.ForeColor = Color.Gainsboro
+        btnClear.ImageAlign = ContentAlignment.MiddleRight
+        btnClear.Location = New Point(507, 266)
+        btnClear.Name = "btnClear"
+        btnClear.Size = New Size(163, 43)
+        btnClear.TabIndex = 32
+        btnClear.Text = "Clear"
+        btnClear.UseVisualStyleBackColor = False
+        ' 
+        ' Label36
+        ' 
+        Label36.AutoSize = True
+        Label36.Font = New Font("Tahoma", 12F, FontStyle.Bold)
+        Label36.Location = New Point(80, 102)
+        Label36.Margin = New Padding(2, 0, 2, 0)
+        Label36.Name = "Label36"
+        Label36.Size = New Size(149, 24)
+        Label36.TabIndex = 21
+        Label36.Text = "Activity Type:"
+        ' 
+        ' dtpEndDate
+        ' 
+        dtpEndDate.Font = New Font("Tahoma", 10F)
+        dtpEndDate.Location = New Point(765, 152)
+        dtpEndDate.Margin = New Padding(2)
+        dtpEndDate.Name = "dtpEndDate"
+        dtpEndDate.Size = New Size(342, 28)
+        dtpEndDate.TabIndex = 31
+        ' 
+        ' Label41
+        ' 
+        Label41.AutoSize = True
+        Label41.Font = New Font("Tahoma", 12F, FontStyle.Bold)
+        Label41.Location = New Point(96, 152)
+        Label41.Margin = New Padding(2, 0, 2, 0)
+        Label41.Name = "Label41"
+        Label41.Size = New Size(132, 24)
+        Label41.TabIndex = 22
+        Label41.Text = "Description:"
+        ' 
+        ' dtpStartDate
+        ' 
+        dtpStartDate.Font = New Font("Tahoma", 10F)
+        dtpStartDate.Location = New Point(765, 102)
+        dtpStartDate.Margin = New Padding(2)
+        dtpStartDate.Name = "dtpStartDate"
+        dtpStartDate.Size = New Size(342, 28)
+        dtpStartDate.TabIndex = 30
+        ' 
+        ' Label43
+        ' 
+        Label43.AutoSize = True
+        Label43.Font = New Font("Tahoma", 12F, FontStyle.Bold)
+        Label43.Location = New Point(639, 100)
+        Label43.Margin = New Padding(2, 0, 2, 0)
+        Label43.Name = "Label43"
+        Label43.Size = New Size(120, 24)
+        Label43.TabIndex = 23
+        Label43.Text = "Start Date:"
+        ' 
+        ' txtFacultyAdviser
+        ' 
+        txtFacultyAdviser.Enabled = False
+        txtFacultyAdviser.Font = New Font("Tahoma", 10F)
+        txtFacultyAdviser.Location = New Point(765, 51)
+        txtFacultyAdviser.Margin = New Padding(2)
+        txtFacultyAdviser.Name = "txtFacultyAdviser"
+        txtFacultyAdviser.Size = New Size(342, 28)
+        txtFacultyAdviser.TabIndex = 29
+        ' 
+        ' Label44
+        ' 
+        Label44.AutoSize = True
+        Label44.Font = New Font("Tahoma", 12F, FontStyle.Bold)
+        Label44.Location = New Point(650, 157)
+        Label44.Margin = New Padding(2, 0, 2, 0)
+        Label44.Name = "Label44"
+        Label44.Size = New Size(108, 24)
+        Label44.TabIndex = 24
+        Label44.Text = "End Date:"
+        ' 
+        ' Label45
+        ' 
+        Label45.AutoSize = True
+        Label45.Font = New Font("Tahoma", 12F, FontStyle.Bold)
+        Label45.Location = New Point(586, 56)
+        Label45.Margin = New Padding(2, 0, 2, 0)
+        Label45.Name = "Label45"
+        Label45.Size = New Size(179, 24)
+        Label45.TabIndex = 28
+        Label45.Text = "Faculty/Adviser:"
+        ' 
+        ' txtActivityType
+        ' 
+        txtActivityType.Enabled = False
+        txtActivityType.Font = New Font("Tahoma", 10F)
+        txtActivityType.Location = New Point(227, 100)
+        txtActivityType.Margin = New Padding(2)
+        txtActivityType.Name = "txtActivityType"
+        txtActivityType.Size = New Size(342, 28)
+        txtActivityType.TabIndex = 26
+        ' 
+        ' txtDescription
+        ' 
+        txtDescription.Enabled = False
+        txtDescription.Font = New Font("Tahoma", 10F)
+        txtDescription.Location = New Point(227, 150)
+        txtDescription.Margin = New Padding(2)
+        txtDescription.Name = "txtDescription"
+        txtDescription.Size = New Size(342, 28)
+        txtDescription.TabIndex = 27
+        ' 
+        ' Panel16
+        ' 
+        Panel16.BackColor = Color.Firebrick
+        Panel16.BorderStyle = BorderStyle.Fixed3D
+        Panel16.Controls.Add(Label46)
+        Panel16.ForeColor = Color.White
+        Panel16.Location = New Point(14, 17)
+        Panel16.Margin = New Padding(2)
+        Panel16.Name = "Panel16"
+        Panel16.Size = New Size(1173, 74)
+        Panel16.TabIndex = 2
+        ' 
+        ' Label46
+        ' 
+        Label46.Font = New Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label46.ImageAlign = ContentAlignment.MiddleLeft
+        Label46.Location = New Point(19, 14)
+        Label46.Margin = New Padding(2, 0, 2, 0)
+        Label46.Name = "Label46"
+        Label46.Size = New Size(426, 34)
+        Label46.TabIndex = 0
+        Label46.Text = "   Create/Modify/Delete Activity"
+        ' 
+        ' Label47
+        ' 
+        Label47.AutoSize = True
+        Label47.Font = New Font("Tahoma", 16F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label47.Location = New Point(21, 10)
+        Label47.Margin = New Padding(2, 0, 2, 0)
+        Label47.Name = "Label47"
+        Label47.Size = New Size(117, 33)
+        Label47.TabIndex = 0
+        Label47.Text = "Activity"
+        ' 
         ' Form_Admin
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -1049,6 +1637,20 @@ Partial Class Form_Admin
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        pnlActivities.ResumeLayout(False)
+        pnlActivities.PerformLayout()
+        Panel10.ResumeLayout(False)
+        Panel10.PerformLayout()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
+        Panel12.ResumeLayout(False)
+        tabActivity.ResumeLayout(False)
+        tabActivityList.ResumeLayout(False)
+        Panel13.ResumeLayout(False)
+        Panel14.ResumeLayout(False)
+        tabManageActivity.ResumeLayout(False)
+        Panel15.ResumeLayout(False)
+        Panel15.PerformLayout()
+        Panel16.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
@@ -1120,4 +1722,46 @@ Partial Class Form_Admin
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label42 As Label
     Friend WithEvents Label40 As Label
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents pnlActivities As Panel
+    Friend WithEvents Panel10 As Panel
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label23 As Label
+    Friend WithEvents Label24 As Label
+    Friend WithEvents Label25 As Label
+    Friend WithEvents Label26 As Label
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Label27 As Label
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents tabActivity As TabControl
+    Friend WithEvents tabActivityList As TabPage
+    Friend WithEvents Panel13 As Panel
+    Friend WithEvents lstActivityList As ListView
+    Friend WithEvents btnAddNewActivity As Button
+    Friend WithEvents Panel14 As Panel
+    Friend WithEvents Label33 As Label
+    Friend WithEvents tabManageActivity As TabPage
+    Friend WithEvents Panel15 As Panel
+    Friend WithEvents btnDeleteActivity As Button
+    Friend WithEvents txtActivityName As TextBox
+    Friend WithEvents btnEditActivity As Button
+    Friend WithEvents Label34 As Label
+    Friend WithEvents btnClear As Button
+    Friend WithEvents Label36 As Label
+    Friend WithEvents dtpEndDate As DateTimePicker
+    Friend WithEvents Label41 As Label
+    Friend WithEvents dtpStartDate As DateTimePicker
+    Friend WithEvents Label43 As Label
+    Friend WithEvents txtFacultyAdviser As TextBox
+    Friend WithEvents Label44 As Label
+    Friend WithEvents Label45 As Label
+    Friend WithEvents txtActivityType As TextBox
+    Friend WithEvents txtDescription As TextBox
+    Friend WithEvents Panel16 As Panel
+    Friend WithEvents Label46 As Label
+    Friend WithEvents Label47 As Label
 End Class

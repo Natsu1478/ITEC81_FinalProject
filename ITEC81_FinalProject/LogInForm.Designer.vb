@@ -239,8 +239,8 @@ Partial Class LogInForm
         ClientSize = New Size(867, 632)
         Controls.Add(Panel1)
         Controls.Add(Label4)
-        Controls.Add(PanelLogIn)
         Controls.Add(PanelUserOption)
+        Controls.Add(PanelLogIn)
         FormBorderStyle = FormBorderStyle.None
         MaximizeBox = False
         Name = "LogInForm"

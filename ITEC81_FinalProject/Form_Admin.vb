@@ -3,10 +3,10 @@ Imports MySql.Data
 Imports MySql.Data.MySqlClient
 
 Public Class Form_Admin
-
     Private Sub Form_Admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim username = Me.Name
+
 
         Try
             conn.Open()
@@ -41,19 +41,16 @@ Public Class Form_Admin
 
         End Try
     End Sub
-
-    Private Sub btnHover(sender As Object, e As EventArgs) Handles btnStudent.MouseMove, Button1.MouseMove, Button2.MouseMove, Button3.MouseMove, Button4.MouseMove
+    Private Sub Button1_MouseEnter(sender As Object, e As EventArgs) Handles btnStudent.MouseMove, Button1.MouseMove, Button2.MouseMove, Button3.MouseMove, Button4.MouseMove
         sender.ForeColor = Color.White
     End Sub
 
-    Private Sub btnHoverLeave(sender As Object, e As EventArgs) Handles btnStudent.MouseLeave, Button1.MouseLeave, Button2.MouseLeave, Button3.MouseLeave, Button4.MouseLeave
-        btnStudent.ForeColor = Color.Black
-        Button1.ForeColor = Color.Black
-        Button2.ForeColor = Color.Black
-        Button3.ForeColor = Color.Black
-        Button4.ForeColor = Color.Black
+    Private Sub Button1_MouseLeave(sender As Object, e As EventArgs) Handles btnStudent.MouseLeave, Button1.MouseLeave, Button2.MouseLeave, Button3.MouseLeave, Button4.MouseLeave
+        btnStudent.ForeColor = Color.LightGray
+        Button1.ForeColor = Color.LightGray
+        Button2.ForeColor = Color.LightGray
+        Button3.ForeColor = Color.LightGray
+        Button4.ForeColor = Color.LightGray
     End Sub
-
-
 
 End Class
