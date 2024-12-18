@@ -88,8 +88,7 @@ Partial Class Form2
         ' 
         ' Label12
         ' 
-        Label12.Font = New Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.Image = My.Resources.Resources.icons8_list_25__1_
+        Label12.Font = New Font("Tahoma", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label12.ImageAlign = ContentAlignment.MiddleLeft
         Label12.Location = New Point(24, 18)
         Label12.Name = "Label12"
@@ -550,8 +549,7 @@ Partial Class Form2
         ' 
         ' Label27
         ' 
-        Label27.Font = New Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label27.Image = My.Resources.Resources.icons8_plus_minus_____25
+        Label27.Font = New Font("Tahoma", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label27.ImageAlign = ContentAlignment.MiddleLeft
         Label27.Location = New Point(24, 18)
         Label27.Name = "Label27"
